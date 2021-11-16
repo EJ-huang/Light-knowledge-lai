@@ -82,11 +82,6 @@
 
 
 <style lang="scss" scoped>
-    .main{
-        .box{
-            position: relative;
-        }
-    }
     .main2{
         .box{
             width: 20rem;

@@ -14,7 +14,7 @@
     <div class="text-3xl text-left pt-2"> 開設過許多課程</div>
 <hr class="mt-2">
     <h1>累積學員近千人，評價都還不錯！</h1>
-            <div class="box1">
+            <div class="box1 pt-2">
                 <img src="../assets/classbg1.png" alt="">
             </div>
     <div class="main w-64 pt-4  ">
