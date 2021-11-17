@@ -1,4 +1,5 @@
 <template>
+<div class="">
       <div class="row main flex md:flex-col items-center flex-wrap md:content-around p-5">
         <div class=" bg-secondary text-lg  text-white mt-5 rounded-md p-2">
             <h1 class="flex">運用「公式」做交易</h1>
@@ -18,7 +19,7 @@
     <div class="foot2 lg:text-2xl pb-2">
         <p>更多網路上無法公開的案例與短線交易公式我將在講座中跟你分享!</p>
     </div>
-    <div class="box1">
+    <div class="box1 text-center">
         <div class="flex side-box justify-center bg-black text-2xl text-white mt-12  py-1 px-2  mx-5 my-5 lg:my-10 rounded-md p-5">
             <img src="../assets/star2.png" alt="">
             <h1 class="flex content-center pt-2">名額有限</h1>
@@ -33,6 +34,8 @@
     </div>
     <!-- <img src="../assets/foot2.png" alt=""> -->
   </div>
+</div>
+
 </template>
 
 

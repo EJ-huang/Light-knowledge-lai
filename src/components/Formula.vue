@@ -1,5 +1,5 @@
 <template>
-    <div class="main h-100 bg-dark_black  text-2xl mt-12 pt-12">
+    <div class=" main h-100 bg-dark_black  text-2xl mt-12 pt-12">
         <div class="box flex  bg-secondary text-2xl text-white mt-5 py-1  mx-5 my-5  rounded-md p-4">
             <img src="../assets/star1.png" alt="">
             <h1 class="flex content-center mt-12">IMPORTANT</h1>

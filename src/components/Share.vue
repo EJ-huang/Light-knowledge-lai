@@ -1,5 +1,5 @@
 <template>
-<div class="main">
+<div class=" main">
   <div class="flex md:flex-col flex-wrap md:content-around p-5">
       <div class=" justify-center bg-secondary text-lg w-15 text-white mt-5 rounded-md p-2">
           <h1 class="flex content-center font-bold">現場分享</h1>

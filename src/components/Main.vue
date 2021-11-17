@@ -1,5 +1,5 @@
 <template>
-<div class=" ">
+<div class="">
 
     <div class="row flex flex-wrap justify-center">
         <div class="flex teacher w-auto p-12 lg:p-24 items-center" data-aos="fade-right" data-aos-duration="1500">
@@ -7,10 +7,6 @@
             <h1 class="flex pt-8 lg:p-32 justify-center">金融怪才-徐諒諒</h1>
         </div>
         <hr class="mt-2">
-            <!-- <div class="main h-60 bg-advantage text-secondary text-2xl mt-12 pt-12">
-                <p>每天長達10小時緊盯螢幕並實測上百種操作模式</p>
-                <p>我抓出了一組獲利交易公式...</p>
-            </div> -->
         <div class="row" data-aos="fade-left" data-aos-duration="2000">
             <div class="main text-left m-10 p-2 leading-10">
                 <h1 class="font-bold text-2xl">嗨，我是徐諒諒</h1>
@@ -30,7 +26,7 @@
 
 
 
-    <div class="main h-60 bg-advantage text-secondary text-2xl mt-12 pt-12">
+    <div class="main h-60 text-center bg-advantage text-secondary text-2xl mt-12 pt-12">
       <p>每天長達10小時緊盯螢幕並實測上百種操作模式</p>
       <p>我抓出了一組獲利交易公式...</p>
   </div>
@@ -48,7 +44,7 @@
         <img src="../assets/star1.png" alt="">
         <h1 class="flex content-center mt-4">IMPORTANT</h1>
     </div>
-      <h1 class="text-white pt-2  text-2xl">這套公式最重要的事情在於</h1>
+      <h1 class="text-white pt-2  text-center    text-2xl">這套公式最重要的事情在於</h1>
       <ol class="list-disc lg:list-none flex flex-col text-center p-10 lg:p-4  text-white text-2xl">
           <li>看懂「型態」，運用線團中的「型態」可以大幅幫助你<span>提高勝率!</span></li>
           <li>透過「公式」規劃出<span>股市當日的走向!</span></li>
@@ -88,7 +84,6 @@ export default {
             }
         }
         ol{
-            // padding-left: 2px;
             span{
                 color: #46AFB0;
             }

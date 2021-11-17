@@ -1,5 +1,5 @@
 <template>
-<div class="container">
+<div class="">
       <div class="flex md:flex-col flex-wrap md:content-around p-5">
           <div class="main1">
 
@@ -61,7 +61,7 @@
             </div>
     </div>
   </div>
-      <img src="../assets/classbg3.png" alt="">
+    <img src="../assets/classbg3.png" alt="">
     <img src="../assets/classbg4.png" alt="">
 </div>
 
