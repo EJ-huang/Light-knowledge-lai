@@ -90,7 +90,7 @@
             <p class="text-white"> 開始規劃出明確走勢</p>
             <p class="text-secondary">用三萬小資金，創造百萬獲利!</p>
 
-            <button class="btn bg-secondary hover:bg-blue-700 text-white font-bold py-2 px-12 ml-12 lg:ml-24  rounded mt-8 lg:mt-16">
+            <button class="btn flex items-center bg-secondary hover:bg-blue-700 text-white font-bold py-2 px-12 ml-12 lg:ml-24  rounded mt-8 lg:mt-16">
             <img src="../assets/arrorw.png" alt="">/ 搶佔免費講座席次
             </button>
         </div>

@@ -1,5 +1,5 @@
 <template>
-<div class="">
+
     <div class="p-2 lg:p-0">
     <div class="row flex  md:flex-col flex-wrap  md:content-around p-5">
         <div class="flex items-start bg-secondary text-lg w-32 text-white mt-5 rounded-md p-2">
@@ -11,10 +11,13 @@
         <div class="main text-left lg:text-center text-2xl p-2 lg:p-0 leading-10">
             <p>許多人一聽到<span>「股市交易公式」</span>會開始緊張，因為他們會害怕自己無法學會</p>
         </div>
-        <div class="student-main h-20 text-center  text-secondary bg-advantage  pt-2 m-0">
+        <div class="student-main h-20 text-center lg:text-3xl  text-secondary bg-advantage  pt-2 m-0">
             <h1>老師，我是新手這個公式會跟數學一樣困難嗎？</h1>
         </div>
-        <div class="student-second text-center">
+        <div class="student-second  text-center">
+            
+        </div>
+        <div class="down p-8 text-left lg:text-center leading-10">
             <h1>對於在求學階段對數學有陰影的人，不用擔心，只要你的視力正常，能分辨出圖形，沒有色盲，基本上都能在短時間內學會！</h1>
         </div>
         <div class=" student-third bg-advantage py-10">
@@ -47,9 +50,7 @@
                 </button>
             </div>
         </div>
-
     </div>    
-</div>
 
 
 </template>
@@ -70,6 +71,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.student-second{
+    //   position: relative;
+    //   top: 10%;
+    //   left: 25%;
+    //   width: 12rem;
+    //   padding: 10px;
+}
 .student-third{
     background-image: url('../assets/student1.png');
     background-size: cover;
@@ -138,6 +146,9 @@ export default {
             background-size: contain;
             height: 30rem;
             width: 30rem;
+        }
+        .student-second{
+            left: 45%;
         }
 }
 </style>

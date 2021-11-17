@@ -1,5 +1,4 @@
 <template>
-<div class="">
 
     <div class="row flex flex-wrap justify-center">
         <div class="flex teacher w-auto p-12 lg:p-24 items-center" data-aos="fade-right" data-aos-duration="1500">
@@ -43,14 +42,14 @@
         <img src="../assets/star1.png" alt="">
         <h1 class="flex content-center mt-4">IMPORTANT</h1>
     </div>
-      <h1 class="text-white pt-2  text-center    text-2xl">這套公式最重要的事情在於</h1>
+      <h1 class="text-white pt-2  text-center text-2xl">這套公式最重要的事情在於</h1>
       <ol class="list-disc lg:list-none flex flex-col text-center p-10 lg:p-4  text-white text-2xl">
           <li>看懂「型態」，運用線團中的「型態」可以大幅幫助你<span>提高勝率!</span></li>
           <li>透過「公式」規劃出<span>股市當日的走向!</span></li>
           <li>遵守紀律，照著規劃出的行情<span>提前佈局交易單!</span></li>
       </ol>
   </div>
-</div>
+
 </template>
 
 

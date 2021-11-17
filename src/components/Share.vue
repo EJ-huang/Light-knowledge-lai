@@ -71,11 +71,11 @@
                 <h1 class="flex content-center pt-2">限額!名額有限!</h1>
             </div>
             <div class="inside flex justify-center items-center p-2">
-                <div class="side box-content h-2.5 w-16 p-4 border-2 text-white">報名即贈</div>
-                <img src="../assets/foot.png" alt="">
+                <div class="side box-content lg:h-2.5 w-16 p-4 border-2 text-white">報名即贈</div>
+                <img src="../assets/teacherYT.png" alt="">
             </div>
             <p class="text-secondary">諒師獨家型態學教學影片</p>
-            <button class="btn bg-secondary hover:bg-blue-700 text-white font-bold py-2 px-12 ml-12 lg:ml-24  rounded mt-8 lg:mt-16">
+            <button class="btn flex items-center bg-secondary hover:bg-blue-700 text-white font-bold py-2 px-12 ml-12 lg:ml-24  rounded mt-4 lg:mt-16">
             <img src="../assets/arrorw.png" alt="">/ 搶佔免費講座席次
             </button>
         </div>
