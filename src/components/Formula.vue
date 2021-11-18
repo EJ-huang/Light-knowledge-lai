@@ -17,32 +17,32 @@
     </div>
         <hr class="mt-2 py-4">
         <div class="main2 flex flex-col">
-            <div class="box flex  text-secondary"  data-aos="fade-down" data-aos-duration="2000">
+            <div class="box flex  text-secondary"  >
                 <h1>01</h1>
                 <span>台股股票</span>
             </div>  
             <div class="content flex justify-evenly p-2">
-                <div class="content-1 text-xl items-center flex flex-col pl-2"  data-aos="fade-right" data-aos-duration="1500">
+                <div class="content-1 text-xl items-center flex flex-col pl-2"  >
                     <p>尋找飆股學生曾抓出近<span>300%獲利飆股 !</span></p>
                     <img src="../assets/form1.png" alt="">
                 </div>
-                <img src="../assets/form.png"  data-aos="fade-left" data-aos-duration="2000" alt="">
+                <img src="../assets/form.png" >
                 <!-- <div class="content-2 pr-2">
                     <img src="../assets/foot.png" alt="">
                 </div> -->
             </div>         
         </div>
         <div class="main2">
-            <div class="box flex  text-secondary" data-aos="fade-down" data-aos-duration="2000">
+            <div class="box flex  text-secondary" >
                 <h1>02</h1>
                 <span>台股台指期當沖</span>
             </div>  
             <div class="content flex justify-evenly pt-8">
-                <div class="content-1 text-xl items-center  flex pl-2" data-aos="fade-right" data-aos-duration="1500">
+                <div class="content-1 text-xl items-center  flex pl-2" >
                     <p>分析盤勢，清楚抓出近期走向，台股一次下殺，<span>獲利達1000點！</span></p>
                     
                 </div>
-                <img src="../assets/form2.png"  data-aos="fade-left" data-aos-duration="2000" alt="">
+                <img src="../assets/form2.png">
             </div>         
         </div>
         <div class="main2 pt-8">
@@ -78,9 +78,8 @@
                 </div>
             </div>         
         </div>
-    <div class="row main flex md:flex-col items-center pt-12" data-aos="flip-right" data-aos-duration="1500"
-     data-aos-delay='1500' >
-        <div class="box1 p-4">
+    <div class="row main flex md:flex-col items-center pt-12" data-aos="flip-right" data-aos-duration="1500" data-aos-delay='1500'>
+        <div class="box1 p-4  text-center">
             <div class="flex side-box justify-center bg-black text-2xl text-white mt-12  py-1 px-2   mx-5 my-5 lg:my-10 rounded-md p-5">
                 <img src="../assets/star2.png" alt="">
                 <h1 class="flex content-center pt-2">限額!名額有限!</h1>
@@ -90,8 +89,8 @@
             <p class="text-white"> 開始規劃出明確走勢</p>
             <p class="text-secondary">用三萬小資金，創造百萬獲利!</p>
 
-            <button class="btn flex items-center bg-secondary hover:bg-blue-700 text-white font-bold py-2 px-12 ml-12 lg:ml-24  rounded mt-8 lg:mt-16">
-            <img src="../assets/arrorw.png" alt="">/ 搶佔免費講座席次
+            <button class="btn flex bg-secondary hover:bg-blue-700 text-white font-bold py-2 px-12   lg:ml-16  rounded lg:mt-16">
+                <img src="../assets/arrorw.png" alt="">/ 搶佔免費講座席次
             </button>
         </div>
     </div>
@@ -156,10 +155,9 @@ export default {
 .box1{
     background-image: url('../assets/foot2.png');
     background-size: cover;
-    height: 50vh;
-    // width: 100%;
+    height: 300px;
+    width: 100%;
     background-repeat: no-repeat;
-    padding: 10px;
 
     .side-box{
         img{

@@ -1,12 +1,12 @@
 <template>
 
     <div class="row flex flex-wrap justify-center">
-        <div class="flex teacher w-auto p-12 lg:p-24 items-center" data-aos="fade-right" data-aos-duration="1500">
+        <div class="flex teacher w-auto p-12 lg:p-24 items-center">
             <img src="../assets/teacher1.png" alt="">
             <h1 class="flex pt-8 lg:p-32 justify-center">金融怪才-徐諒諒</h1>
         </div>
         <hr class="mt-2">
-        <div class="row" data-aos="fade-left" data-aos-duration="2000">
+        <div class="row" >
             <div class="main text-left m-10 p-2 leading-10">
                 <h1 class="font-bold text-2xl">嗨，我是徐諒諒</h1>
                 <p>在投資世界裡，有交易公式與沒公式的人，命運會很懸殊!</p>
@@ -69,13 +69,13 @@ export default {
 
 <style lang="scss" scoped>
     .teacher{
-          img:hover{
-    transform: rotateY(180deg) scale(1.2);
+        img:hover{
+        transform: rotateY(180deg) scale(1.2);
   }
     }
     .main{
         .box{
-            position: relative;
+            // position: relative;
             img{
                 width: 150px;
                 padding-right: 10px;

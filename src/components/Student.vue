@@ -1,12 +1,15 @@
 <template>
 
     <div class="p-2 lg:p-0">
-    <div class="row flex  md:flex-col flex-wrap  md:content-around p-5">
-        <div class="flex items-start bg-secondary text-lg w-32 text-white mt-5 rounded-md p-2">
-            <h1 class="flex  font-bold">非常多的學生</h1>
-        </div>
-        <div class="text-3xl text-left pt-2">學會這套秘密公式 已經成為出色的股市操盤手！</div>
-    </div>
+        <!-- <transition appear @before-enter="beforeEnter" @enter="enter" @leave="leave"> -->
+            <div class="row flex  md:flex-col flex-wrap  md:content-around p-5" >
+                <div class="flex items-start bg-secondary text-lg w-32 text-white mt-5 rounded-md p-2">
+                    <h1 class="flex  font-bold">非常多的學生</h1>
+                </div>
+                <div class="text-3xl text-left pt-2">學會這套秘密公式 已經成為出色的股市操盤手！</div>
+            </div>
+        <!-- </transition> -->
+
     <hr class="mt-2 lg:hidden">
         <div class="main text-left lg:text-center text-2xl p-2 lg:p-0 leading-10">
             <p>許多人一聽到<span>「股市交易公式」</span>會開始緊張，因為他們會害怕自己無法學會</p>
@@ -35,7 +38,7 @@
         </div> 
         <div class="row main flex md:flex-col items-center pt-12" data-aos="flip-right" data-aos-duration="1500"
         data-aos-delay='1500' >
-            <div class="box1">
+            <div class="box1 items-center">
                 <div class="flex side-box justify-center bg-black text-2xl text-white mt-12  py-1 px-2  mx-5 my-5 lg:my-15 rounded-md p-5">
                     <img src="../assets/star2.png" alt="">
                     <h1 class="flex content-center pt-2">限額!名額有限!</h1>
@@ -57,15 +60,42 @@
 
 
 <script>
-import AOS from 'aos/dist/aos.css'
+// import { ref } from 'vue'
+import gsap from 'gsap'
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+
+gsap.registerPlugin(ScrollTrigger);
 export default {
   name: 'Student',
   props: {
     msg: String
   },
-    mounted: function(){
-      AOS
-    // gsap.from('.square', {duration:4, scale: 2})
+
+  setup(){
+      const beforeEnter = (el) => {
+          console.log('before enter')
+          el.style.transform = 'translateX(180px)'
+          el.style.opacity = 0
+      }
+      const enter = (el) => {
+          console.log('start to enter')
+          gsap.to(el, {
+              duration: 1,
+              x: 0,
+              opacity: 1
+          })
+          el.style.opacity = 1
+      }
+      const leave = (el) => {
+          console.log('leave')
+          gsap.to(el,{
+              duration: 0.6,
+              x: 100,
+              opacity: 0
+          })
+      }
+    return { beforeEnter, enter, leave }
   }
 }
 </script>

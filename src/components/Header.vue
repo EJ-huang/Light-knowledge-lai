@@ -1,12 +1,16 @@
 <template>
-<!-- <div class="container"> -->
-  <div class=" row lg:hidden">
-    <div class="flex md:flex-col flex-wrap md:content-around p-5">
+<div class="container">
+  <div class="header-ph row lg:hidden">
+    <div class="flex flex-col items-center md:content-around p-5">
         <img src="../assets/logo.png" alt="">
-        <div class="header-main flex justify-center text-center bg-secondary text-lg w-15 text-white mt-5 rounded-md p-2">
-            <h1 class="flex content-center ">用對「公式」</h1>
+          <div class="header-main flex justify-center text-center bg-secondary text-lg w-15 text-white mt-5 rounded-md p-2">
+              <h1 class="flex content-center ">用對「公式」</h1>
+          </div>
+        <div class="text text-3xl font-bold">
+          <span>3萬本金</span> <br>
+          <span>也能幫你滾出</span>
+          <font>百萬獲利!</font>
         </div>
-        <div class="text-3xl">3萬本金也能幫你滾出 <p style="color: #46AFB0">百萬獲利!</p></div>
     </div>
     <div class="head flex justify-center">
       <img src="../assets/Heade.png" alt="">
@@ -20,6 +24,9 @@
         <div class="main_box bg-white text-secondary flex justify-evenly">競賽中2周創造4倍獲利</div>
     </div>
   </div>
+
+
+  <!-- PC -->
   <div class="container hidden  lg:block">
     <div class="header">
       <div class="header-img">
@@ -28,10 +35,9 @@
         <div class="header-box justify-center bg-secondary text-lg w-64 text-white rounded-md p-2">
             <h1 class="p-2">用對「公式」</h1>
         </div>
-        <div class="header-box1" data-aos="fade-down" data-aos-duration="1500"
-      data-aos-delay='1500'>
-          <span>3萬本金</span>
-          <span>也能幫你滾出 <p>百萬獲利！</p> </span>
+        <div class="header-box1 text-center" data-aos="fade-down" data-aos-duration="1500" data-aos-delay='1500'>
+          <span>3萬本金</span><br>
+          <span>也能幫你滾出 <font>百萬獲利！</font> </span>
         </div>
         <div class="header-box2 flex flex-col w-1/4" data-aos="fade-up" data-aos-duration="1500"
       data-aos-delay='1500'>
@@ -39,7 +45,7 @@
         </div>
         <div class="header-box3 flex flex-col" data-aos="fade-up" data-aos-duration="1500"
       data-aos-delay='1500'>
-          <span>曾歷經頂尖交易作手地獄訓練 並在<em>2年內研究過</em></span>
+          <span>曾歷經頂尖交易作手地獄訓練 並在2年內研究過</span>
           <p> 35,040張盤勢… 以及 上百種操作模式</p>
         </div>
           <div class="header-box4" data-aos="fade-down" data-aos-duration="1500">
@@ -52,20 +58,81 @@
             <div class="main_box bg-white w-1/4 text-secondary">競賽中2周創造4倍獲利</div>
         </div>
   </div>
-<!-- </div> -->
+</div>
 
 </template>
 
 
 <script>
 // import AOS from 'aos/dist/aos.css'
-// import { gsap } from "gsap";
-// import { ScrollTrigger } from 'gsap/ScrollTrigger';
-// gsap.registerPlugin(ScrollTrigger);
+import { gsap } from "gsap";
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { onMounted, onUnmounted } from "vue";
+
+
+gsap.registerPlugin(ScrollTrigger);
 export default {
   name: 'Header',
   setup(){
-    
+    let tl = null;
+    const triggers = ScrollTrigger.getAll();
+
+    function gsapSet(){
+      gsap.to(".header-box", {
+        scrollTrigger: ".header-box",
+        duration: 1,
+        // rotation: 360,
+        background: "orange",
+        yoyo: true,
+        repeat: -1,
+        start: 'top bottom',
+        end: 'bottom bottom',
+      }),
+      gsap.to(".header-box1 ",{
+        scrollTrigger: ".header-box1 ",
+        duration: 3,
+        color: "#fa0",
+        background: "#000",
+        yoyo: true,
+        repeat: -1,
+        ease: "power2"
+      })
+      console.log("rotate")
+    }
+
+    onMounted(() => {
+      ScrollTrigger.refresh();
+      gsapSet();
+    });
+    onUnmounted(() => {
+      triggers.forEach((trigger) => {
+        trigger.kill();
+      });
+      ScrollTrigger.clearMatchMedia();
+    });
+    //   const beforeEnter = (el) => {
+    //       console.log('before enter')
+    //       el.style.transform = 'translateX(180px)'
+    //       el.style.opacity = 0
+    //   }
+    //   const enter = (el) => {
+    //       console.log('start to enter')
+    //       gsap.to(el, {
+    //           duration: 1,
+    //           x: 0,
+    //           opacity: 1
+    //       })
+    //       el.style.opacity = 1
+    //   }
+    //   const leave = (el) => {
+    //       console.log('leave')
+    //       gsap.to(el,{
+    //           duration: 0.6,
+    //           y: 0,
+    //           opacity: 0
+    //       })
+    //   }
+    // return { beforeEnter, enter, leave }
   },
   props: {
     msg: String
@@ -91,12 +158,19 @@ export default {
 <style lang="scss" scoped>
 .container{
   float: none;
-  width: 900px;
+  // width: 900px;
+
+  .header-ph{
+    .text{
+      text-align: center;
+      font{
+        color: #77ADAE;
+      }
+    }
+  }
   .header{
     background: linear-gradient(to left, transparent, #fff),
       url("../assets/bg11.png");
-    // background-image: url('../assets/bg11.png'),
-    // linear-gradient(to right, rgba(0,0,0,1) 20%,rgba(0,0,0,0));
     height: 100vh;
     width: 100vw;
     background-size: cover;
@@ -117,7 +191,7 @@ export default {
       left: 16%;
       font-size: 52px;
       background-color:#F8F9FA;
-      p{
+      font{
         color: #77ADAE;
       }
     }
@@ -133,10 +207,10 @@ export default {
       font-size: 36px;
     }
     .header-box4{
-      position: absolute;
-      bottom: 10;
-      right: 10%;
-      width: 45rem;
+      position: relative;
+      top: 5%;
+      left: 50%;
+      width: 35%;
     }
   }
     .main_box{
@@ -150,6 +224,26 @@ export default {
     .main_box{
       left: 45%;
     }
+    .header-box4{
+      position: relative;
+      top: 5%;
+      left: 50%;
+      width: 50%;
+    }
+  }
+  @media (max-width: 1440px) {
+    .header{
+      .main_box{
+        left: 45%;
+      }
+      .header-box4{
+        position: relative;
+        top: 14%;
+        left: 60%;
+        width: 35%;
+      }      
+    }
+
   }
 }
 </style>
