@@ -8,7 +8,7 @@
   </div>
   <hr class="mt-2">
     <div class="main2 flex flex-col pt-8">
-        <div class="box flex text-secondary">
+        <div class="box flex items-center text-secondary text-2xl">
             <h1>01</h1>
             <span>台股台指期當沖</span>
         </div>    
@@ -19,7 +19,7 @@
         </div>      
     </div>
     <div class="main2 flex flex-col pt-8">
-        <div class="box flex text-secondary">
+        <div class="box flex items-center text-secondary text-2xl">
             <h1>02</h1>
             <span>提高勝率的八大型態</span>
         </div>    
@@ -30,7 +30,7 @@
         </div>      
     </div>
     <div class="main2 flex flex-col pt-8">
-        <div class="box flex justify-center text-secondary">
+        <div class="box flex  items-center  text-secondary text-2xl">
             <h1>03</h1>
             <span>成功交易人的四大特質與十大特性</span>
         </div>    
@@ -41,7 +41,7 @@
         </div>      
     </div>
     <div class="main2 flex flex-col pt-8">
-        <div class="box flex text-secondary">
+        <div class="box flex items-center text-secondary ">
             <h1>04</h1>
             <span>停損的藝術，計算盈虧讓每次交易都俱備最佳cp值！</span>
         </div>    
@@ -52,7 +52,7 @@
         </div>      
     </div>
     <div class="main2 flex flex-col pt-8">
-        <div class="box flex text-secondary">
+        <div class="box flex items-center text-secondary ">
             <h1>05</h1>
             <span>上班族也能操盤！特殊高勝率操盤法！每天10分鐘輕鬆交易！</span>
         </div>    

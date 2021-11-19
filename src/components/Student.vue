@@ -23,17 +23,17 @@
         <div class="down p-8 text-left lg:text-center leading-10">
             <h1>對於在求學階段對數學有陰影的人，不用擔心，只要你的視力正常，能分辨出圖形，沒有色盲，基本上都能在短時間內學會！</h1>
         </div>
-        <div class=" student-third bg-advantage py-10">
+        <div class=" student-third flex items-center justify-evenly text-2xl bg-advantage py-10">
             <p>沒有投資經驗的新手，已經在市場中做到 <span>穩定獲利 !</span></p>
         </div>
-        <div class=" student-fourth bg-advantage  py-24">
+        <div class=" student-fourth text-2xl bg-advantage  py-24">
             <p>從新手開始買房子，這位學生 <span>買了房子 !</span></p>
         </div>  
-        <div class="main2 lg:flex md:flex-col items-center text-left pt-12 p-2 leading-10 text-secondary">
+        <div class="main2 lg:flex md:flex-col items-center text-left text-2xl pt-12 p-2 leading-10 text-secondary">
             <p>記得曾有學生問我：「老師，股市真的能用小資金操作嗎？ 3萬、5萬塊也可以？」<span> 這位學生問完的隔天，我開了一個示範帳戶，裡面放入3萬7的小資金，直接實測給他看！</span></p>
             <img src="../assets/student4.png" alt="">
         </div>
-        <div class=" student-fifth bg-advantage  py-24">
+        <div class=" student-fifth bg-advantage text-2xl  py-16 lg:py-32">
             <p>從新手開始買房子，這位學生 <span>買了房子 !</span></p>
         </div> 
         <div class="row main flex md:flex-col items-center pt-12" data-aos="flip-right" data-aos-duration="1500"
@@ -110,11 +110,13 @@ export default {
 }
 .student-third{
     background-image: url('../assets/student1.png');
-    background-size: cover;
-    height: 300px;
-    width: 100%;
+    background-size: contain;
+    background-position-x: 60%;
+    height: 20rem;
+    // width: 100%;
     padding-right: 10rem;
-    // background-repeat: no-repeat;
+    padding-bottom: 10rem;
+    background-repeat: no-repeat;
     span{
         color: #46AFB0;
     }
@@ -127,10 +129,12 @@ export default {
 }
 .student-fourth{
     background-image: url('../assets/student3.png');
-    background-size: cover;
-    height: 300px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: 30%;
+    height: 20rem;
     width: 100%;
-    padding-left: 13rem;
+    padding-left: 12rem;
     span{
         color: #46AFB0;
     }
@@ -139,13 +143,18 @@ export default {
     span{
         color: #000;
     }
+    img{
+        width: 100%;
+    }
 }
 .student-fifth{
     background-image: url('../assets/student2.png');
-    background-size: cover;
-    height: 300px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: 30%;
+    height: 17rem;
     width: 100%;
-    padding-left: 13rem;
+    padding-left: 12rem;
     span{
         color: #46AFB0;
     }
@@ -172,6 +181,11 @@ export default {
 
 
 @media (min-width: 1280px) {
+        .main2{
+            img{
+                width: 20%;
+            }
+        }
         .box1{
             background-size: contain;
             height: 30rem;
@@ -179,6 +193,17 @@ export default {
         }
         .student-second{
             left: 45%;
+        }
+        .student-third{
+            padding-right: 30rem;
+        }
+        .student-fourth{
+            background-position-x: 30%;
+            padding-left: 60rem;
+        }
+        .student-fifth{
+            background-position-x: 30%;
+            padding-left: 60rem;
         }
 }
 </style>
