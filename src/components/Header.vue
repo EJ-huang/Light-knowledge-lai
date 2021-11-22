@@ -97,7 +97,6 @@ export default {
         repeat: -1,
         ease: "power2"
       })
-      console.log("rotate")
     }
 
     onMounted(() => {

@@ -1,8 +1,8 @@
 <template>
 <div class="main items-center   ">
-  <div class="flex md:flex-col flex-wrap p-5">
+  <div class="inside-box flex md:flex-col flex-wrap p-5">
       <div class="box-1 justify-center bg-secondary text-lg  text-white mt-5 rounded-md p-2">
-          <h1 class="flex font-bold">現場分享</h1>
+          <h1 class="text1 flex font-bold">現場分享</h1>
       </div>
     <div class="text-3xl text-left lg:text-center pt-2">現場講座中將與你分享五大實戰要點</div>
   </div>
@@ -83,6 +83,31 @@
 </div>
 </template>
 
+
+<script>
+import gsap from 'gsap';
+
+export default {
+    // mounted: function() {
+    //     this.scrollTrigger();
+    // },
+    // methods: {
+    //     scrollTrigger(){
+    //         gsap.timeline({
+    //             scrollTrigger: {
+    //                 trigger: ".box-1",
+    //                 start: "top 100%",
+    //                 end: "bottom top",
+    //                 // markers: true,
+    //                 scrub: true,
+    //                 pin: true
+    //             },
+    //         })
+    //         .from(".box-1", { x: -400, y: 0, opacity: 0})
+    //     }
+    // }
+}
+</script>
 
 <style lang="scss" scoped>
     .main2{

@@ -14,7 +14,7 @@
         <div class="main text-left lg:text-center text-2xl p-2 lg:p-0 leading-10">
             <p>許多人一聽到<span>「股市交易公式」</span>會開始緊張，因為他們會害怕自己無法學會</p>
         </div>
-        <div class="student-main h-20 text-center lg:text-3xl  text-secondary bg-advantage  pt-2 m-0">
+        <div class="student-main h-20 text-center text-2xl lg:text-3xl  text-secondary bg-advantage  pt-2 m-0">
             <h1>老師，我是新手這個公式會跟數學一樣困難嗎？</h1>
         </div>
         <div class="student-second  text-center">
@@ -57,6 +57,7 @@
 
 
 </template>
+
 
 
 <script>
