@@ -1,9 +1,9 @@
 <template>
     <div class="main h-100 items-center bg-dark_black  text-2xl mt-12 pt-12">
-        <div class="box flex items-center justify-center h-12 bg-secondary text-2xl text-white mt-5 py-1 px-1  my-5  rounded-md p-4">
-            <img src="../assets/star1.png" alt="">
-            <h1 class="flex content-center mt-4">IMPORTANT</h1>
+        <div class="box-pic">
+            <img src="../assets/teacher2.png" alt="">
         </div>
+        
         <ol class="list-disc lg:list-none  p-10 text-left lg:text-center font-black text-secondary">
             <li>短線交易的秘密公式</li>
             <span> 將幫助你建立清晰有架構的交易方式，並讓你有信心在股市中達成穩定獲利 !</span>
@@ -78,9 +78,9 @@
                 </div>
             </div>         
         </div>
-    <div class="row main flex md:flex-col items-center pt-12" data-aos="flip-right" data-aos-duration="1500" data-aos-delay='1500'>
-        <div class="box1 p-4  text-center">
-            <div class="flex side-box justify-center bg-black text-2xl text-white mt-12  py-1 px-2   mx-5 my-5 lg:my-10 rounded-md p-5">
+    <div class="row main main-inside3 flex md:flex-col items-center pt-12">
+        <div class="box1  p-4 box-inside text-center">
+            <div class="flex side-box  justify-center bg-black text-2xl text-white mt-12  py-1 px-2   mx-5 my-5 lg:my-10 rounded-md p-5">
                 <img src="../assets/star2.png" alt="">
                 <h1 class="flex content-center pt-2">限額!名額有限!</h1>
             </div>
@@ -89,7 +89,7 @@
             <p class="text-white"> 開始規劃出明確走勢</p>
             <p class="text-secondary">用三萬小資金，創造百萬獲利!</p>
 
-            <button class="btn flex bg-secondary hover:bg-blue-700 text-white font-bold py-2 px-12   lg:ml-16  rounded lg:mt-16">
+            <button class="btn flex bg-secondary hover:bg-blue-700 text-white font-bold py-2 px-12   lg:ml-16  rounded mt-4 lg:mt-16">
                 <img src="../assets/arrorw.png" alt="">/ 搶佔免費講座席次
             </button>
         </div>
@@ -100,14 +100,36 @@
 
 
 <script>
-import AOS from 'aos/dist/aos.css'
+import gsap from 'gsap/all';
 export default {
   name: 'Formula',
   props: {
     msg: String
   },
     mounted: function(){
-      AOS
+      this.scrollTrigger();
+  },
+  methods: {
+      scrollTrigger(){
+          gsap.timeline({
+              scrollTrigger: {
+                  trigger: ".box-pic",
+                  start: "top center",
+                  end: "center top",
+                  scrub: true
+              }
+          })
+          .from(".box-pic img", { x: 0, opacity: 0})
+          gsap.timeline({
+              scrollTrigger: {
+                  trigger: ".main-inside3",
+                  start: "top center",
+                  end: "center 50%",
+                  scrub: true
+              }
+          })
+          .from(".box-inside", { x: -100, y: 300, rotation: 180, opacity: 0})
+      }
   }
 }
 </script>
@@ -118,7 +140,7 @@ export default {
         .box{
             position: relative;
             img{
-                width: 150px;
+                width: 100%;
                 padding-right: 10px;
             }
         }
@@ -154,8 +176,8 @@ export default {
     }
 .box1{
     background-image: url('../assets/foot2.png');
-    background-size: cover;
-    height: 300px;
+    background-size: contain;
+    height: 60vh;
     width: 100%;
     background-repeat: no-repeat;
 
@@ -173,10 +195,10 @@ export default {
 }
 @media (min-width: 1280px) {
     .main{
-        .box{
+        .box-pic{
             position: relative;
-            left: 40%;
-            width: 20rem;
+            left: 25%;
+            width: 50%;
             padding: 10px;
         }
         .box1{
@@ -187,7 +209,9 @@ export default {
     }
     .main2{
         .box{
-            border-radius: 1%;
+            border-radius: 10px;
+            text-align: center;
+            margin-left: 40%;
         }
         // display: flex;
         // justify-content: space-around;

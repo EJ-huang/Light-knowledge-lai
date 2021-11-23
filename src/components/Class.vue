@@ -21,7 +21,7 @@
                 <img src="../assets/classbg1.png" alt="">
             </div> -->
             <div class="main-bg flex flex-col items-center">
-                <div class="main  w-64 lg:w-2/4 pt-4  ">
+                <div class="main main-container  w-64 lg:w-2/4 pt-4  ">
                         <div class="imgbgc lg:hidden">
                             <img src="../assets/classbg1.png" alt="">
                             <img src="../assets/classbg1.png" alt="">
@@ -82,9 +82,9 @@
             </div>
 
   </div>
-  <div class="box flex flex-col items-center">
-    <img src="../assets/classbg3.png" alt="">
-    <img src="../assets/classbg4.png" alt="">
+  <div class="footer-box flex flex-col items-center">
+    <img src="../assets/classbg3.png" class="bg1" alt="">
+    <img src="../assets/classbg4.png" class="bg2" alt="">
   </div>
 </div>
 
@@ -107,23 +107,37 @@ export default {
         scrollTrigger(){
             gsap.timeline({
                 scrollTrigger: {
-                    trigger: ".main",
-                    start: "center center",
-                    end: "top top",
-                    markers: true,
+                    trigger: ".main-container",
+                    start: "top center",
+                    end: "center",
                     scrub: true,
-                    pin: true
+                    // markers: true
+                    // pin: true,
+                    // pinSpacing: false
                 },
-                // duration: 3,
             })
-            .from(".side-1", { x : -800, y: 0, opacity: 0 })
-            .from(".side-2", { x : -100, y: 0, opacity: 0 })
+            .from(".side-1", { x : -800, y: 0, rotation: 180, opacity: 0 })
+            .from(".side-2", { x : -800, y: 0, opacity: 0 })
             .from(".side-3", { x : 0, y: 0, opacity: 0 })
-            .from(".side-4", { x : -100, y: 0, opacity: 0 })
+            .from(".side-4", { x : -800, y: 0, opacity: 0 })
             .from(".side-5", { x : -800, y: 0, opacity: 0 })
-            .from(".side-6", { x : -100, y: 200, opacity: 0 })
+            .from(".side-6", { x : -800, y: 0, opacity: 0 })
             .from(".side-7", { x : -800, y: 0, opacity: 0 })
-            .from(".side-8", { x : -100, y: 0, opacity: 0 })
+            .from(".side-8", { x : -800, y: 0, opacity: 0 })
+
+            gsap.timeline({
+                scrollTrigger: {
+                    trigger: ".footer-box",
+                    start: "top center",
+                    end: "center top",
+                    // markers: {startColor: "green", endColor: "red", fontSize: "24px"},
+                    scrub: true,
+                    // pin: true,
+                    // pinSpacing: false
+                },
+            })
+            .from(".bg1", { x : 0, y: 0, opacity: 0})
+            .from(".bg2", { x : -400, y: 0, opacity: 0})
         }
     },
     setup() {
@@ -190,7 +204,7 @@ export default {
     //     transform:scaleY(-1.4);
     // }
     
-.main{
+.main-container{
     .pic{
         overflow: hidden;
         opacity: 0;

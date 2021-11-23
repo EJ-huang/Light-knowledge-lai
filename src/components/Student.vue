@@ -6,7 +6,7 @@
                 <div class="flex items-start bg-secondary text-lg w-32 text-white mt-5 rounded-md p-2">
                     <h1 class="flex  font-bold">非常多的學生</h1>
                 </div>
-                <div class="text-3xl text-left pt-2">學會這套秘密公式 已經成為出色的股市操盤手！</div>
+                <div class="text-3xl lg:text-5xl text-left pt-2">學會這套秘密公式 已經成為出色的股市操盤手！</div>
             </div>
         <!-- </transition> -->
 
@@ -20,7 +20,7 @@
         <div class="student-second  text-center">
             
         </div>
-        <div class="down p-8 text-left lg:text-center leading-10">
+        <div class="down p-8 text-left lg:text-center lg:text-2xl leading-10">
             <h1>對於在求學階段對數學有陰影的人，不用擔心，只要你的視力正常，能分辨出圖形，沒有色盲，基本上都能在短時間內學會！</h1>
         </div>
         <div class=" student-third flex items-center justify-evenly text-2xl bg-advantage py-10">
@@ -29,24 +29,24 @@
         <div class=" student-fourth text-2xl bg-advantage  py-24">
             <p>從新手開始買房子，這位學生 <span>買了房子 !</span></p>
         </div>  
-        <div class="main2 lg:flex md:flex-col items-center text-left text-2xl pt-12 p-2 leading-10 text-secondary">
-            <p>記得曾有學生問我：「老師，股市真的能用小資金操作嗎？ 3萬、5萬塊也可以？」<span> 這位學生問完的隔天，我開了一個示範帳戶，裡面放入3萬7的小資金，直接實測給他看！</span></p>
+        <div class="main2 space-y-6 lg:flex md:flex-col items-center text-left lg:text-3xl pt-12 p-2 leading-10 ">
+            <p class="text-secondary">記得曾有學生問我：「老師，股市真的能用小資金操作嗎？ 3萬、5萬塊也可以？」</p>
+            <p>這位學生問完的隔天，我開了一個示範帳戶，裡面放入3萬7的小資金，直接實測給他看！</p>
             <img src="../assets/student4.png" alt="">
         </div>
         <div class=" student-fifth bg-advantage text-2xl  py-16 lg:py-32">
             <p>從新手開始買房子，這位學生 <span>買了房子 !</span></p>
         </div> 
-        <div class="row main flex md:flex-col items-center pt-12" data-aos="flip-right" data-aos-duration="1500"
-        data-aos-delay='1500' >
-            <div class="box1 items-center">
+        <div class="row main main-inside2 flex md:flex-col items-center pt-12">
+            <div class="box1 box-inside2 text-center">
                 <div class="flex side-box justify-center bg-black text-2xl text-white mt-12  py-1 px-2  mx-5 my-5 lg:my-15 rounded-md p-5">
                     <img src="../assets/star2.png" alt="">
                     <h1 class="flex content-center pt-2">限額!名額有限!</h1>
                 </div>
                 
-                <p class="text-white">短線交易的秘密公式</p>
-                <p class="text-white"> 開始規劃出明確走勢</p>
-                <p class="text-secondary">用三萬小資金，創造百萬獲利!</p>
+                <p class="lg:text-2xl  text-white">短線交易的秘密公式</p>
+                <p class="lg:text-2xl  text-white"> 開始規劃出明確走勢</p>
+                <p class="lg:text-2xl  text-secondary">用三萬小資金，創造百萬獲利!</p>
 
                 <button class="btn flex items-center  bg-secondary hover:bg-blue-700 text-white font-bold py-2 px-12 ml-12 lg:ml-24  rounded mt-8 lg:mt-16">
                     <img src="../assets/arrorw.png" alt="">/ 搶佔免費講座席次
@@ -63,41 +63,53 @@
 <script>
 // import { ref } from 'vue'
 import gsap from 'gsap'
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-
-
-gsap.registerPlugin(ScrollTrigger);
 export default {
   name: 'Student',
   props: {
     msg: String
   },
-
-  setup(){
-      const beforeEnter = (el) => {
-          console.log('before enter')
-          el.style.transform = 'translateX(180px)'
-          el.style.opacity = 0
-      }
-      const enter = (el) => {
-          console.log('start to enter')
-          gsap.to(el, {
-              duration: 1,
-              x: 0,
-              opacity: 1
+  mounted: function(){
+      this.ScrollTrigger();
+  },
+  methods: {
+      ScrollTrigger(){
+          gsap.timeline({
+              scrollTrigger: {
+                  trigger: ".main-inside2",
+                  start: "top center",
+                  end: "center 50%",
+                  scrub: true,
+              }
           })
-          el.style.opacity = 1
+          .fromTo(".box-inside2", { x: -400, y: 100, opacity: 0}, { x: 0, y: 0, opacity: 1 })
       }
-      const leave = (el) => {
-          console.log('leave')
-          gsap.to(el,{
-              duration: 0.6,
-              x: 100,
-              opacity: 0
-          })
-      }
-    return { beforeEnter, enter, leave }
   }
+
+//   setup(){
+//       const beforeEnter = (el) => {
+//           console.log('before enter')
+//           el.style.transform = 'translateX(180px)'
+//           el.style.opacity = 0
+//       }
+//       const enter = (el) => {
+//           console.log('start to enter')
+//           gsap.to(el, {
+//               duration: 1,
+//               x: 0,
+//               opacity: 1
+//           })
+//           el.style.opacity = 1
+//       }
+//       const leave = (el) => {
+//           console.log('leave')
+//           gsap.to(el,{
+//               duration: 0.6,
+//               x: 100,
+//               opacity: 0
+//           })
+//       }
+//     return { beforeEnter, enter, leave }
+//   }
 }
 </script>
 
@@ -111,7 +123,7 @@ export default {
 }
 .student-third{
     background-image: url('../assets/student1.png');
-    background-size: contain;
+    background-size: cover;
     background-position-x: 60%;
     height: 20rem;
     // width: 100%;
@@ -130,7 +142,7 @@ export default {
 }
 .student-fourth{
     background-image: url('../assets/student3.png');
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position-x: 30%;
     height: 20rem;
@@ -150,10 +162,10 @@ export default {
 }
 .student-fifth{
     background-image: url('../assets/student2.png');
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position-x: 30%;
-    height: 17rem;
+    height: 50vh;
     width: 100%;
     padding-left: 12rem;
     span{
@@ -162,8 +174,8 @@ export default {
 }
 .box1{
     background-image: url('../assets/foot2.png');
-    background-size: cover;
-    height: 300px;
+    background-size: contain;
+    height: 50vh;
     width: 100%;
     background-repeat: no-repeat;
 
@@ -197,14 +209,17 @@ export default {
         }
         .student-third{
             padding-right: 30rem;
+            background-size: contain;
         }
         .student-fourth{
             background-position-x: 30%;
             padding-left: 60rem;
+            background-size: contain;
         }
         .student-fifth{
             background-position-x: 30%;
             padding-left: 60rem;
+            background-size: contain;
         }
 }
 </style>

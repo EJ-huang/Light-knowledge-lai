@@ -3,7 +3,7 @@
   <div class="header-ph row lg:hidden">
     <div class="flex flex-col items-center md:content-around p-5">
         <img src="../assets/logo.png" alt="">
-          <div class="header-main flex justify-center text-center bg-secondary text-lg w-15 text-white mt-5 rounded-md p-2">
+          <div class="header-main flex justify-center text-center bg-secondary text-lg  py-2 px-12 text-white mt-5 rounded-md p-2">
               <h1 class="flex content-center ">用對「公式」</h1>
           </div>
         <div class="text text-3xl font-bold">
@@ -15,12 +15,13 @@
     <div class="head flex justify-center">
       <img src="../assets/Heade.png" alt="">
     </div>
-    <div class="flex content pt-20 justify-center">
+    <div class="flex content pt-20 text-center text-2xl">
       <h1>曾歷經頂尖交易作手地獄訓練並在兩年內研究過 <p class="text-secondary">35,040張盤勢...</p>以及 <p class="text-secondary">上百種操作模式</p> </h1>
     </div>
-    <div class="main h-60 bg-secondary text-white mt-12 pt-12 ">
+    <div class="main h-60 bg-secondary text-white  mt-12 pt-12 p-8">
         <p>這是讓我贏得全球交易競賽前四強的武器</p>
-        <p class="text-3xl">短線交易最高效的秘密公式!</p>
+        <p class="text-3xl">短線交易最高效的</p>
+        <p class="text-3xl">秘密公式!</p>
         <div class="main_box bg-white text-secondary flex justify-evenly">競賽中2周創造4倍獲利</div>
     </div>
   </div>
@@ -43,8 +44,7 @@
       data-aos-delay='1500'>
           <img src="../assets/Group.png" alt="">
         </div>
-        <div class="header-box3 flex flex-col" data-aos="fade-up" data-aos-duration="1500"
-      data-aos-delay='1500'>
+        <div class="header-box3 flex flex-col text-2xl" data-aos="fade-up" data-aos-duration="1500" data-aos-delay='1500'>
           <span>曾歷經頂尖交易作手地獄訓練 並在2年內研究過</span>
           <p> 35,040張盤勢… 以及 上百種操作模式</p>
         </div>
@@ -215,7 +215,7 @@ export default {
     .main_box{
       position: relative;
       top: 10%;
-      left: 25%;
+      left: 18%;
       width: 12rem;
       padding: 10px;
     }
@@ -231,18 +231,25 @@ export default {
     }
   }
   @media (max-width: 1440px) {
-    .header{
-      .main_box{
-        left: 45%;
-      }
       .header-box4{
-        position: relative;
-        top: 14%;
+        top: 10%;
         left: 60%;
         width: 35%;
-      }      
-    }
-
+      }   
   }
+  // @media (min-width: 1440px) {
+  //   .header{
+  //     .main_box{
+  //       left: 45%;
+  //     }
+  //     .header-box4{
+  //       position: relative;
+  //       top: 10%;
+  //       left: 60%;
+  //       width: 35%;
+  //     }      
+  //   }
+
+  // }
 }
 </style>

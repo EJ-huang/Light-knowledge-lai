@@ -13,7 +13,7 @@
             <span>台股台指期當沖</span>
         </div>    
         <div class="content flex justify-center pt-8">
-            <div class="content-1 flex pl-2">
+            <div class="content-1 flex text-2xl pl-2">
                 <p>如何透過公式，清楚的抓出任何投資商品的走勢？最精采的內容，線上不能公開的秘密，我將在現場跟你分享。</p>
             </div>
         </div>      
@@ -24,7 +24,7 @@
             <span>提高勝率的八大型態</span>
         </div>    
         <div class="content flex justify-center pt-8">
-            <div class="content-1 flex pl-2">
+            <div class="content-1 flex text-2xl pl-2">
                 <p>觀察超過3萬多張盤勢之後，我歸納出的8大型態，用對了，可以大幅度提高你的交易勝率！</p>
             </div>
         </div>      
@@ -35,7 +35,7 @@
             <span>成功交易人的四大特質與十大特性</span>
         </div>    
         <div class="content justify-center flex pt-8">
-            <div class="content-1 flex pl-2">
+            <div class="content-1 flex text-2xl pl-2">
                 <p>在投資領域，技術很重要，但是心態更重要，如果你在投資路上績效不理想，這些特質與特性可以幫助你重新檢視自己。</p>
             </div>
         </div>      
@@ -46,7 +46,7 @@
             <span>停損的藝術，計算盈虧讓每次交易都俱備最佳cp值！</span>
         </div>    
         <div class="content justify-center flex pt-8">
-            <div class="content-1 flex pl-2">
+            <div class="content-1 flex text-2xl pl-2">
                 <p>盈虧比，這個重要觀念，很多操作十多年的投資人都可能不知道，搞懂盈虧比，抓住最佳停損時機，才是交易能穩定獲利的王道。</p>
             </div>
         </div>      
@@ -57,26 +57,25 @@
             <span>上班族也能操盤！特殊高勝率操盤法！每天10分鐘輕鬆交易！</span>
         </div>    
         <div class="content justify-center flex pt-8">
-            <div class="content-1 flex pl-2">
+            <div class="content-1 flex text-2xl pl-2">
                 <p>上班族上班無法操盤怎麼做？完全不用擔心，你可以運用早上10分鐘，簡單的方式快速搞定交易。</p>
             </div>
         </div>      
     </div>
 
-    <div class="row main flex md:flex-col items-center pt-12" data-aos="flip-right" data-aos-duration="1500"
-     data-aos-delay='1500' >
-        <div class="box1 p-4 items-center">
+    <div class="row main main-inside4 flex md:flex-col items-center pt-12">
+        <div class="box1 box-inside4 p-4 items-center">
             <div class="flex side-box justify-center bg-black text-2xl text-white mt-12  py-1 px-2  mx-5 my-5 rounded-md p-5">
                 <img src="../assets/star2.png" alt="">
                 <h1 class="flex content-center pt-2">限額!名額有限!</h1>
             </div>
             <div class="inside flex justify-center items-center p-2">
-                <div class="side box-content lg:h-2.5 w-16 p-4 border-2 text-white">報名即贈</div>
-                <img src="../assets/teacherYT.png" alt="">
+                <!-- <div class="side box-content lg:h-2.5 w-16 p-8 border-2 text-white">報名即贈</div> -->
+                <img src="../assets/teacherYT1.png" alt="">
             </div>
-            <p class="text-secondary">諒師獨家型態學教學影片</p>
+            <p class="text-secondary text-center">諒師獨家型態學教學影片</p>
             <button class="btn flex items-center bg-secondary hover:bg-blue-700 text-white font-bold py-2 px-12 ml-12 lg:ml-24  rounded mt-4 lg:mt-16">
-            <img src="../assets/arrorw.png" alt="">/ 搶佔免費講座席次
+                <img src="../assets/arrorw.png" alt="">/ 搶佔免費講座席次
             </button>
         </div>
     </div>
@@ -88,24 +87,24 @@
 import gsap from 'gsap';
 
 export default {
-    // mounted: function() {
-    //     this.scrollTrigger();
-    // },
-    // methods: {
-    //     scrollTrigger(){
-    //         gsap.timeline({
-    //             scrollTrigger: {
-    //                 trigger: ".box-1",
-    //                 start: "top 100%",
-    //                 end: "bottom top",
-    //                 // markers: true,
-    //                 scrub: true,
-    //                 pin: true
-    //             },
-    //         })
-    //         .from(".box-1", { x: -400, y: 0, opacity: 0})
-    //     }
-    // }
+    mounted: function() {
+        this.scrollTrigger();
+    },
+    methods: {
+        scrollTrigger(){
+            gsap.timeline({
+                scrollTrigger: {
+                    trigger: ".main-inside4",
+                    start: "top center",
+                    end: "bottom 50%",
+                    // markers: true,
+                    scrub: true,
+                    // pin: true
+                },
+            })
+            .from(".box-inside4", { x: -100, y: 300, rotation: 180, opacity: 0})
+        }
+    }
 }
 </script>
 
@@ -123,7 +122,6 @@ export default {
         .content{
             img{
                 width: 10rem;
-                // float: right;
             }
             p{
                 color: #000;
@@ -141,7 +139,7 @@ export default {
     .box1{
         background-image: url('../assets/foot2.png');
         background-size: cover;
-        height: 50vh;
+        height: 60vh;
         width: 100%;
         background-repeat: no-repeat;
         padding: 10px;
@@ -176,6 +174,13 @@ export default {
                 left: 40%;
                 width: 20rem;
                 padding: 10px;
+            }
+        }
+        .main2{
+            .box{
+                border-radius: 10px;
+                text-align: center;
+                // margin-left: 40%;
             }
         }
 

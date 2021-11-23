@@ -18,25 +18,48 @@
         <div class="foot2 lg:text-2xl pb-2">
             <p>更多網路上無法公開的案例與短線交易公式我將在講座中跟你分享!</p>
         </div>
-        <div class="row main flex md:flex-col items-center pt-12" data-aos="flip-right" data-aos-duration="1500" data-aos-delay='1500'>
-            <div class="box1 text-center">
+        <div class="row main-inside flex md:flex-col items-center w-full  pt-12">
+            <div class="box1 box-inside1 items-center">
                 <div class="flex side-box justify-center bg-black text-2xl text-white mt-12  py-1 px-2  mx-5 my-5 lg:my-10 rounded-md p-5">
                     <img src="../assets/star2.png" alt="">
                     <h1 class="flex content-center pt-2">名額有限</h1>
                 </div>
-                
-                <p class="text-white">短線交易的秘密公式，提前預測明日走勢</p>
-                <p class="text-secondary">股票,期貨,美股通通適用</p>
+                <div class="flex flex-col justify-center items-center lg:text-2xl">
+                    <p class="text-white">短線交易的秘密公式，提前預測明日走勢</p>
+                    <p class="text-secondary">股票,期貨,美股通通適用</p>
+                </div>
 
-                <button class="btn flex bg-secondary hover:bg-blue-700 text-white font-bold py-2 px-12   lg:ml-16  rounded lg:mt-16">
+                <button class="btn flex items-center bg-secondary hover:bg-blue-700 text-white font-bold py-2 px-12 mt-8 ml-12 lg:ml-24  rounded lg:mt-16">
                     <img src="../assets/arrorw.png" alt="">/ 搶佔免費講座席次
                 </button>
             </div>
-            <!-- <img src="../assets/foot2.png" alt=""> -->
         </div>
+
     </div>
 
 </template>
+
+<script>
+import gsap from 'gsap/all';
+export default {
+    mounted: function(){
+        this.scrollTrigger();
+    },
+    methods: {
+        scrollTrigger(){
+            gsap.timeline({
+                scrollTrigger: {
+                    trigger: ".main-inside",
+                    start: "top center",
+                    end: "center 50%",
+                    scrub: true,
+                }
+            })
+            .from(".box-inside1", { x: -100, y: 300, rotation:180, opacity: 0})
+        }
+    }
+}
+</script>
 
 
 <style lang="scss" scoped>
@@ -48,8 +71,8 @@
 .row{
     .box1{
         background-image: url('../assets/foot2.png');
-        background-size: cover;
-        height: 300px;
+        background-size: contain;
+        height: 50vh;
         width: 100%;
         background-repeat: no-repeat;
 
@@ -70,7 +93,7 @@
     .main{
         .box1{
             background-size: contain;
-            height: 40rem;
+            // height: 40rem;
             width: 30rem;
         }
     }

@@ -28,9 +28,9 @@
       <p>每天長達10小時緊盯螢幕並實測上百種操作模式</p>
       <p>我抓出了一組獲利交易公式...</p>
   </div>
-  <div class="down p-8 text-left lg:text-center leading-10">
+  <div class="flex flex-col down p-8 text-left lg:text-2xl lg:text-center space-y-6">
       <p>這讓我感到很驚訝，因為這跟很多數人使用的技術幾乎無關:</p>
-      <ol class="list-disc lg:list-none">
+      <ol class="list-disc lg:list-none space-y-6">
           <li>不需要運用一堆技術指標</li>
           <li>不需要看均線</li>
           <li>甚至不需要盯盤</li>
