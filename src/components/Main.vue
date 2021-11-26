@@ -1,22 +1,22 @@
 <template>
 
-    <div class="row flex flex-wrap justify-center">
-        <div class="flex teacher w-auto p-12 lg:p-24 items-center">
+    <div class="row flex  flex-wrap justify-center">
+        <div class="flex teacher p-12 lg:p-24 items-center">
             <img src="../assets/teacher1.png" alt="">
-            <h1 class="flex pt-8 lg:p-32 justify-center">金融怪才-徐諒諒</h1>
+            <h1 class="flex pl-2 justify-center lg:text-5xl">金融怪才-徐諒諒</h1>
         </div>
         <hr class="mt-2">
         <div class="row" >
-            <div class="main text-left m-10 p-2 leading-10">
-                <h1 class="font-bold text-2xl">嗨，我是徐諒諒</h1>
-                <p>在投資世界裡，有交易公式與沒公式的人，命運會很懸殊!</p>
-                <p>有明確的交易方法<span class="text-secondary">只要勝率有6成，長期下來都能賺錢</span>(你同意吧?)</p>
+            <div class="main text-left m-10 p-2  space-y-4">
+                <h1 class="font-bold text-2xl lg:text-4xl">嗨，我是徐諒諒</h1>
+                <p class="text-2xl">在投資世界裡，有交易公式與沒公式的人，命運會很懸殊!</p>
+                <p class="text-2xl">有明確的交易方法<span class="text-secondary">只要勝率有6成，長期下來都能賺錢</span>(你同意吧?)</p>
             </div>
             <div class="content text-left m-10 p-2 leading-10">
-                <h1 class="font-bold text-2xl">我在新手時期很幸運的遇到一位操盤界大師</h1>
-                <p>他出資培訓我，讓我每天操作美股當沖，一天的資金只有30美金，輸光了就要罰站到天亮!</p>
-                <p>於是...我開始長達3個月的腿部肌耐力訓練，整整三個月我都在罰站中渡過。<br>這真的很崩潰，你能想像一個新手沒有任何財經知識，直接下場操作還要被懲罰的心情嗎?</p>
-                <p>為了改變處境，我開始在每一次交易用A4紙畫出盤型與自己的觀察</p>
+                <h1 class="font-bold text-2xl lg:text-4xl">我在新手時期很幸運的遇到一位操盤界大師</h1>
+                <p class="text-xl">他出資培訓我，讓我每天操作美股當沖，一天的資金只有30美金，輸光了就要罰站到天亮!</p>
+                <p class="text-xl">於是...我開始長達3個月的腿部肌耐力訓練，整整三個月我都在罰站中渡過。<br>這真的很崩潰，你能想像一個新手沒有任何財經知識，直接下場操作還要被懲罰的心情嗎?</p>
+                <p class="text-xl">為了改變處境，我開始在每一次交易用A4紙畫出盤型與自己的觀察。</p>
             </div>            
         </div>
     </div>
@@ -69,9 +69,11 @@ export default {
 
 <style lang="scss" scoped>
     .teacher{
-        img:hover{
-        transform: rotateY(180deg) scale(1.2);
-  }
+        img{
+            &:hover{
+                transform: rotateY(180deg) scale(1.2);
+            }
+        }
     }
     .main{
         .box{
@@ -89,6 +91,14 @@ export default {
     }
 
     @media (min-width: 1280px) {
+        .teacher{
+            h1{
+                width: 35rem;
+            }
+            img{
+                width: 50%;
+            }
+        }
         .main{
             .box{
                 position: relative;

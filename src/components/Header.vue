@@ -1,255 +1,321 @@
 <template>
-<div class="container">
-  <div class="header-ph row lg:hidden">
-    <div class="flex flex-col items-center md:content-around p-5">
-        <img src="../assets/logo.png" alt="">
-          <div class="header-main flex justify-center text-center bg-secondary text-lg  py-2 px-12 text-white mt-5 rounded-md p-2">
-              <h1 class="flex content-center ">用對「公式」</h1>
+        <div class="header">
+          <div class="row  flex flex-col lg:flex-row justify-center text-white">
+              <div class="row">
+                <div class="header-img">
+                  <img src="../assets/logo1.png" alt="">
+                </div>
+
+                  <div class="header-box1 text-left z-10 space-y-4" data-aos="fade-down" data-aos-duration="1500" data-aos-delay='1500'>
+                    <span>各國瘋狂印鈔後</span><br>
+                    <span>全球通膨急遽升溫、國際指數不斷堆高… </span><br>
+                    <span class="text-4xl flex-wrap">2022年的股市</span><br>
+                    <span>是否將迎來<font>雪崩般暴跌？</font></span>
+                  </div>
+                    <div class="icon absolute z-0">
+                      <img src="../assets/Ellipse.png"  alt="">
+                    </div>
+                  <!-- <div class="header-box2 flex flex-col w-1/4" data-aos="fade-up" data-aos-duration="1500" data-aos-delay='1500'>
+                    <span>台股投資趨勢論壇4大頂尖交易人，帶你看見2022長線、短線獲利契機！</span>
+                  </div> -->
+                  <div class="header-box3 z-10  text-left text-2xl" data-aos="fade-up" data-aos-duration="1500" data-aos-delay='1500'>
+                    <span>台股投資趨勢論壇</span><br>
+                    <p>4大頂尖交易人，帶你看見2022長線、短線獲利契機！</p>
+                  </div>
+                  <div class="icon2 absolute z-0">
+                    <img src="../assets/Group1.png"  alt="">
+                  </div>
           </div>
-        <div class="text text-3xl font-bold">
-          <span>3萬本金</span> <br>
-          <span>也能幫你滾出</span>
-          <font>百萬獲利!</font>
-        </div>
-    </div>
-    <div class="head flex justify-center">
-      <img src="../assets/Heade.png" alt="">
-    </div>
-    <div class="flex content pt-20 text-center text-2xl">
-      <h1>曾歷經頂尖交易作手地獄訓練並在兩年內研究過 <p class="text-secondary">35,040張盤勢...</p>以及 <p class="text-secondary">上百種操作模式</p> </h1>
-    </div>
-    <div class="main h-60 bg-secondary text-white  mt-12 pt-12 p-8">
-        <p>這是讓我贏得全球交易競賽前四強的武器</p>
-        <p class="text-3xl">短線交易最高效的</p>
-        <p class="text-3xl">秘密公式!</p>
-        <div class="main_box bg-white text-secondary flex justify-evenly">競賽中2周創造4倍獲利</div>
-    </div>
-  </div>
 
+              <div class="header-box4  flex flex-row mt-48  sm:mt-80 lg:mt-40 lg:pl-80">
+                <div class="row">
+                    <div class="teacher-content1 absolute lg:hidden">
+                        <div class="teacher-name  bg-white-500 ">投機之王 - 5萬8翻身上億資產</div>
+                        <div class="line"></div>
+                    </div>
+                    <img src="../assets/wawa.png" alt="">
+                    <img src="../assets/icon.png" class="pl-8 lg:pl-12" alt="">
 
-  <!-- PC -->
-  <div class="container hidden  lg:block">
-    <div class="header">
-      <div class="header-img">
-        <img src="../assets/logo.png" alt="">
-      </div>
-        <div class="header-box justify-center bg-secondary text-lg w-64 text-white rounded-md p-2">
-            <h1 class="p-2">用對「公式」</h1>
-        </div>
-        <div class="header-box1 text-center" data-aos="fade-down" data-aos-duration="1500" data-aos-delay='1500'>
-          <span>3萬本金</span><br>
-          <span>也能幫你滾出 <font>百萬獲利！</font> </span>
-        </div>
-        <div class="header-box2 flex flex-col w-1/4" data-aos="fade-up" data-aos-duration="1500"
-      data-aos-delay='1500'>
-          <img src="../assets/Group.png" alt="">
-        </div>
-        <div class="header-box3 flex flex-col text-2xl" data-aos="fade-up" data-aos-duration="1500" data-aos-delay='1500'>
-          <span>曾歷經頂尖交易作手地獄訓練 並在2年內研究過</span>
-          <p> 35,040張盤勢… 以及 上百種操作模式</p>
-        </div>
-          <div class="header-box4" data-aos="fade-down" data-aos-duration="1500">
-            <img src="../assets/lialia.png"  alt=""> 
+                </div>
+                <div class="  pt-20 ">
+                    <img src="../assets/kai.png" alt="">
+                    <div class="teacher-content2 absolute lg:hidden">
+                        <div class="teacher-name  bg-white-500 ">外資歌神 - 曾任外資機構操盤管理職</div>
+                        <div class="line2"></div>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="teacher-content3 absolute lg:hidden">
+                        <div class="teacher-name  bg-white-500 ">金控自營部操盤人 - 十年績效不曾為負</div>
+                        <div class="line3"></div>
+                    </div>
+                        <img src="../assets/hor.png" alt="">
+                        <img src="../assets/icon2.png" class="pl-8 lg:pl-12" alt="">
+                        <!-- <div class="teacher-name bg-white-500  pl-12 -mt-36 text-4xl ">冒牌生</div> -->
+                </div>
+                <div class=" pt-20">
+                    <img src="../assets/lia.png" alt="">
+                    <div class="teacher-content4 absolute lg:hidden">
+                        <div class="teacher-name  bg-white-500 ">金融怪才 - 自學成材殺入全球交易競賽前四強</div>
+                        <div class="line4"></div>
+                    </div>
+                </div>
+            </div>
           </div>
+          <div class="main p-4  flex flex-col items-center text-center lg:h-60 lg:mt-0 lg:mt-44 bg-third text-white">
+              <p class="lg:text-4xl mb-8">為什麼頂尖交易人，此刻都對股市崩跌開始有所警惕！？</p>
+              <p class="lg:text-4xl"> 線圖、基本面、資金流向哪一點讓股市出現衰敗徵兆！？</p>
+           </div>
         </div>
-          <div class="main flex flex-col  justify-center text-center h-60 w-screen bg-secondary text-white">
-            <p>這是讓我贏得全球交易競賽前四強的武器</p>
-            <p class="text-3xl">短線交易最高效的秘密公式!</p>
-            <div class="main_box bg-white w-1/4 text-secondary">競賽中2周創造4倍獲利</div>
-        </div>
-  </div>
-</div>
 
+    
 </template>
 
-
-<script>
-// import AOS from 'aos/dist/aos.css'
-import { gsap } from "gsap";
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { onMounted, onUnmounted } from "vue";
-
-
-gsap.registerPlugin(ScrollTrigger);
-export default {
-  name: 'Header',
-  setup(){
-    let tl = null;
-    const triggers = ScrollTrigger.getAll();
-
-    function gsapSet(){
-      gsap.to(".header-box", {
-        scrollTrigger: ".header-box",
-        duration: 1,
-        // rotation: 360,
-        background: "orange",
-        yoyo: true,
-        repeat: -1,
-        start: 'top bottom',
-        end: 'bottom bottom',
-      }),
-      gsap.to(".header-box1 ",{
-        scrollTrigger: ".header-box1 ",
-        duration: 3,
-        color: "#fa0",
-        background: "#000",
-        yoyo: true,
-        repeat: -1,
-        ease: "power2"
-      })
-    }
-
-    onMounted(() => {
-      ScrollTrigger.refresh();
-      gsapSet();
-    });
-    onUnmounted(() => {
-      triggers.forEach((trigger) => {
-        trigger.kill();
-      });
-      ScrollTrigger.clearMatchMedia();
-    });
-    //   const beforeEnter = (el) => {
-    //       console.log('before enter')
-    //       el.style.transform = 'translateX(180px)'
-    //       el.style.opacity = 0
-    //   }
-    //   const enter = (el) => {
-    //       console.log('start to enter')
-    //       gsap.to(el, {
-    //           duration: 1,
-    //           x: 0,
-    //           opacity: 1
-    //       })
-    //       el.style.opacity = 1
-    //   }
-    //   const leave = (el) => {
-    //       console.log('leave')
-    //       gsap.to(el,{
-    //           duration: 0.6,
-    //           y: 0,
-    //           opacity: 0
-    //       })
-    //   }
-    // return { beforeEnter, enter, leave }
-  },
-  props: {
-    msg: String
-  },
-  mounted(){
-    // AOS.init()
-
-    // const scrollTrigger = {
-    //   trigger: '.header-main',
-    //   start: 'top bottom',
-    //   end: 'bottom bottom',
-    //   scrub: true
-    // };
-  },
-  //   mounted: function(){
-  //     AOS,
-  //   gsap.from('.header-main', {duration:4, "--myColor":"orange", yoyo:true, repeat: -1})
-  // }
-}
-</script>
-
-
 <style lang="scss" scoped>
-.container{
-  float: none;
-  // width: 900px;
+// .container{
+//   margin: 0;
+//   padding: 0;
+// }
+.header{
+    position: relative;
+    background-image: url('../assets/bg_header.png');
+    background-repeat: no-repeat;
+    background-size: contain;
 
-  .header-ph{
-    .text{
-      text-align: center;
-      font{
-        color: #77ADAE;
-      }
-    }
-  }
-  .header{
-    background: linear-gradient(to left, transparent, #fff),
-      url("../assets/bg11.png");
-    height: 100vh;
-    width: 100vw;
-    background-size: cover;
+    height: 750px;
+    // width: 100vw;
     .header-img{
       position: absolute;
       top: 5%;
       right: 5%;
     }
-    .header-box{
-      position: absolute;
-      top: 10%;
-      left: 22%;
-      font-size: 36px;
+    .icon{
+      top: 42%;
+      left: 10%;
+    }
+    .icon2{
+      bottom: 30%;
+      left: 10%;
     }
     .header-box1{
       position: absolute;
       top: 20%;
-      left: 16%;
-      font-size: 52px;
-      background-color:#F8F9FA;
+      left: 10%;
+      font-size: 36px;
       font{
-        color: #77ADAE;
+        color: #F8CA7D;
       }
-    }
-    .header-box2{
-      position: absolute;
-      top: 45%;
-      left: 17%;
     }
     .header-box3{
       position: absolute;
-      top: 65%;
+      top: 55%;
       left: 10%;
-      font-size: 36px;
+      // font-size: 36px;
+      .header-box3_inside{
+        padding: 5px;
+        background: rgba(255, 255, 255, 0.8);
+      }
+      font{
+        color: #77ADAE;
+        background: rgba(255, 255, 255, 0.8);
+      }
     }
     .header-box4{
-      position: relative;
-      top: 5%;
-      left: 50%;
-      width: 35%;
+      padding-left: 40rem;
     }
-  }
-    .main_box{
-      position: relative;
-      top: 10%;
-      left: 18%;
-      width: 12rem;
-      padding: 10px;
-    }
-  @media (min-width: 1280px) {
-    .main_box{
-      left: 45%;
-    }
-    .header-box4{
-      position: relative;
-      top: 5%;
-      left: 50%;
-      width: 50%;
-    }
-  }
-  @media (max-width: 1440px) {
-      .header-box4{
-        top: 10%;
-        left: 60%;
-        width: 35%;
-      }   
-  }
-  // @media (min-width: 1440px) {
-  //   .header{
-  //     .main_box{
-  //       left: 45%;
-  //     }
-  //     .header-box4{
-  //       position: relative;
-  //       top: 10%;
-  //       left: 60%;
-  //       width: 35%;
-  //     }      
-  //   }
-
-  // }
 }
+    @media (max-width: 376px) {
+      .header{
+        background-image: url('../assets/bg_header1.png');
+        background-size: cover;
+        height: 100vh;
+        .header-img{
+          left: 10%;
+        }
+        .icon{
+          top: 20%;
+          left: 10%;
+        }
+        .icon2{
+          bottom: 65%;
+          left: 10%;
+        }
+        .header-box1{
+          font-size: 12px;
+          top: 10%;
+        }
+        .header-box3{
+          font-size: 12px;
+          top: 22%;
+        }
+        .header-box4{
+          padding: 30px;
+          .teacher-content1{
+            background-color: #fff;
+            padding: 5px;
+            color: #595757;
+            font-size: 12px;
+            top: 38%;
+            .line{
+              border-right: 1px solid #fff;
+              height: 60px;
+              position: absolute;
+              left: 10%;
+              top: 100%;
+              transform: rotate(-20deg);
+            }
+          }
+          .teacher-content2{
+            background-color: #fff;
+            font-size: 12px;
+            padding: 5px;
+            color: #595757;
+            bottom: 22%;
+            left: 15%;
+            .line2{
+              border-right: 1px solid #fff;
+              height: 10px;
+              position: absolute;
+              left: 60%;
+              bottom: 100%;
+              transform: rotate(-20deg);
+            }
+          }
+          .teacher-content3{
+            background-color: #fff;
+            padding: 5px;
+            color: #595757;
+            font-size: 12px;
+            top: 42%;
+            right: 5%;
+            .line3{
+              border-right: 1px solid #fff;
+              height: 18px;
+              position: absolute;
+              left: 30%;
+              top: 100%;
+              transform: rotate(-20deg);
+            }
+          }
+          .teacher-content4{
+            background-color: #fff;
+            padding: 5px;
+            color: #595757;
+            font-size: 12px;
+            bottom: 17%;
+            right: 5%;
+            .line4{
+              border-right: 1px solid #fff;
+              height: 50px;
+              position: absolute;
+              right: 10%;
+              bottom: 100%;
+              transform: rotate(-20deg);
+            }
+          }
+        }
+      }
+    }
+    @media (max-width: 1024px) and (min-width: 376px){
+      .header{
+        .header-box4{
+          padding-left: 0;
+        }
+        background-size: cover;
+        height: 100vh;
+        .header-img{
+          left: 10%;
+        }
+        .icon{
+          top: 20%;
+          left: 10%;
+        }
+        .icon2{
+          bottom: 70%;
+          left: 10%;
+        }
+        .header-box1{
+          font-size: 12px;
+          top: 10%;
+        }
+        .header-box3{
+          font-size: 12px;
+          top: 20%;
+        }
+        .header-box4{
+          padding: 30px;
+          .teacher-content1{
+            background-color: #fff;
+            padding: 5px;
+            color: #595757;
+            font-size: 12px;
+            top: 34%;
+            .line{
+              border-right: 1px solid #fff;
+              height: 60px;
+              position: absolute;
+              left: 10%;
+              top: 100%;
+              transform: rotate(-20deg);
+            }
+          }
+          .teacher-content2{
+            background-color: #fff;
+            padding: 5px;
+            color: #595757;
+            font-size: 12px;
+            bottom: 8%;
+            left: 20%;
+            .line2{
+              border-right: 1px solid #fff;
+              height: 10px;
+              position: absolute;
+              left: 60%;
+              bottom: 100%;
+              transform: rotate(-20deg);
+            }
+          }
+          .teacher-content3{
+            background-color: #fff;
+            padding: 5px;
+            color: #595757;
+            font-size: 12px;
+            top: 48%;
+            right: 5%;
+            .line3{
+              border-right: 1px solid #fff;
+              height: 18px;
+              position: absolute;
+              left: 30%;
+              top: 100%;
+              transform: rotate(-20deg);
+            }
+          }
+          .teacher-content4{
+            background-color: #fff;
+            padding: 5px;
+            color: #595757;
+            font-size: 12px;
+            bottom: 3%;
+            right: 8%;
+            .line4{
+              border-right: 1px solid #fff;
+              height: 50px;
+              position: absolute;
+              right: 10%;
+              bottom: 100%;
+              transform: rotate(-20deg);
+            }
+          }
+        }
+      }
+    }
+    @media (max-width: 1440px){
+      .header{
+        .header-box4{
+          // padding-left: 50rem;
+        }
+      }
+    }
+
 </style>
