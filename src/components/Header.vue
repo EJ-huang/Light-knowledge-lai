@@ -27,7 +27,7 @@
                   </div>
           </div>
 
-              <div class="header-box4  flex flex-row mt-48  sm:mt-80 lg:mt-40 lg:pl-80">
+              <div class="header-box4  flex flex-row  sm:mt-24 lg:mt-40 lg:pl-80">
                 <div class="row">
                     <div class="teacher-content1 absolute lg:hidden">
                         <div class="teacher-name  bg-white-500 ">投機之王 - 5萬8翻身上億資產</div>
@@ -62,8 +62,8 @@
                 </div>
             </div>
           </div>
-          <div class="main p-4  flex flex-col items-center text-center lg:h-60 lg:mt-0 lg:mt-44 bg-third text-white">
-              <p class="lg:text-4xl mb-8">為什麼頂尖交易人，此刻都對股市崩跌開始有所警惕！？</p>
+          <div class="main p-4  flex flex-col items-center text-center lg:h-60 mt-60 md:mt-16  lg:mt-44 bg-third text-white">
+              <p class="lg:text-4xl pt-8 mb-8">為什麼頂尖交易人，此刻都對股市崩跌開始有所警惕！？</p>
               <p class="lg:text-4xl"> 線圖、基本面、資金流向哪一點讓股市出現衰敗徵兆！？</p>
            </div>
         </div>
@@ -80,9 +80,9 @@
     position: relative;
     background-image: url('../assets/bg_header.png');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 
-    height: 750px;
+    // height: 750px;
     // width: 100vw;
     .header-img{
       position: absolute;
@@ -128,7 +128,7 @@
       .header{
         background-image: url('../assets/bg_header1.png');
         background-size: cover;
-        height: 100vh;
+        // height: 100vh;
         .header-img{
           left: 10%;
         }
@@ -137,7 +137,7 @@
           left: 10%;
         }
         .icon2{
-          bottom: 65%;
+          bottom: 70%;
           left: 10%;
         }
         .header-box1{
@@ -150,12 +150,13 @@
         }
         .header-box4{
           padding: 30px;
+          margin-top: 25rem;
           .teacher-content1{
             background-color: #fff;
             padding: 5px;
             color: #595757;
             font-size: 12px;
-            top: 38%;
+            top: 31%;
             .line{
               border-right: 1px solid #fff;
               height: 60px;
@@ -170,7 +171,7 @@
             font-size: 12px;
             padding: 5px;
             color: #595757;
-            bottom: 22%;
+            bottom: 38%;
             left: 15%;
             .line2{
               border-right: 1px solid #fff;
@@ -186,7 +187,7 @@
             padding: 5px;
             color: #595757;
             font-size: 12px;
-            top: 42%;
+            top: 34%;
             right: 5%;
             .line3{
               border-right: 1px solid #fff;
@@ -202,7 +203,7 @@
             padding: 5px;
             color: #595757;
             font-size: 12px;
-            bottom: 17%;
+            bottom: 35%;
             right: 5%;
             .line4{
               border-right: 1px solid #fff;
@@ -264,7 +265,7 @@
             padding: 5px;
             color: #595757;
             font-size: 12px;
-            bottom: 8%;
+            // bottom: 8%;
             left: 20%;
             .line2{
               border-right: 1px solid #fff;
@@ -296,8 +297,8 @@
             padding: 5px;
             color: #595757;
             font-size: 12px;
-            bottom: 3%;
-            right: 8%;
+            // bottom: 3%;
+            // right: 8%;
             .line4{
               border-right: 1px solid #fff;
               height: 50px;
@@ -308,6 +309,18 @@
             }
           }
         }
+      }
+    }
+    @media (max-width: 768px) {
+
+    }
+    @media (max-width: 1024px) {
+      .teacher-content4{
+        right: 5rem;
+        bottom: 2rem;
+      }
+      .header-box4{
+        margin-top: 22rem;
       }
     }
     @media (max-width: 1440px){

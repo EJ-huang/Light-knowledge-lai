@@ -1,6 +1,6 @@
 <template>
         <div class="container-center2">
-            <div class="flex flex-col items-center qu pt-24">
+            <div class="flex flex-col items-center qu pt-24 ">
                 <h2 class="flex justify-center p-2 text-4xl lg:text-3xl bg-gray-900 text-white lg:w-1/4 ">2021 / 12 / 09</h2>
                 <h2 class="text-center text-3xl lg:text-4xl pt-12">趨勢論壇精彩議程</h2>
                 <div class="line"></div>

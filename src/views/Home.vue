@@ -7,6 +7,7 @@
     <News />
     <Advantage />
     <Question />
+    <Footer />
 
   </div>
 
@@ -21,6 +22,7 @@ import Date from '@/components/Date.vue'
 import News from '@/components/News.vue'
 import Question from '@/components/Question.vue'
 import Advantage from '@/components/Advantage.vue'
+import Footer from '@/components/Footer.vue'
 
 
 export default {
@@ -32,7 +34,8 @@ export default {
     Date,
     News,
     Question,
-    Advantage
+    Advantage,
+    Footer
   }
 }
 </script>

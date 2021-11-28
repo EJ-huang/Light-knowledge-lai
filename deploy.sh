@@ -9,6 +9,6 @@ cd dist
 git init 
 git add -A
 git commit -m 'deploy'
-git push -f https://github.com/EJ-huang/Enstar-sale.git master:gh-pages
+git push -f https://github.com/EJ-huang/Light-knowledge-lai.git master:gh-pages
 
 cd -

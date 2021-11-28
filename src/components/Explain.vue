@@ -140,7 +140,7 @@
         .line2{
             width: 309px;
             height: 15px;
-            left: 11.5rem;
+            left: 11.6rem;
             border-bottom: 3px solid #727171;
             position: absolute; 
         }

@@ -1,11 +1,11 @@
 <template>
 
         <div class="container-bg bg-sixth">
-            <div class="">
-                <h2 class="text-6xl pt-12 text-gray-900 font-bold pb-12">尹星輕知識講座3大優勢</h2>
+            <div class="flex justify-center">
+                <h2 class="text-3xl lg:text-6xl pt-12 text-gray-900 font-bold pb-12">尹星輕知識講座3大優勢</h2>
                 <div class="line"></div>
             </div>
-            <div class="inside flex justify-around text-2xl">
+            <div class="inside flex flex-col lg:flex-row items-center justify-center text-2xl pb-12 lg:pt-24">
                 <div class="box ">
                     <img src="../assets/advantage1.png" alt="">
                 </div>
@@ -31,6 +31,12 @@
         height: 10rem;
         border-bottom: 5px solid #065F76;
         position: absolute;
+    }
+
+    @media (max-width: 375px){
+        .line{
+            height: 7rem;
+        }
     }
 }
 </style>

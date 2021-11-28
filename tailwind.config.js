@@ -13,7 +13,8 @@ module.exports = {
        'orange': '#EB8E4E',
        'pink-light': '#FE8A8A',
        'fifth': ' #CBCBCB',
-       'sixth': ' #F5F6F6'
+       'sixth': ' #F5F6F6',
+       'seventh': ' #3E3A39'
       }),
       textColor: theme => theme('colors'),
       textColor: {

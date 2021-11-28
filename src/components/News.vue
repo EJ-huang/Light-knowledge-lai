@@ -1,11 +1,11 @@
 <template>
     <div class="contenter-bg ">
         <div class="flex justify-center">
-            <h2 class="text-center text-6xl text-white pt-12">趨勢論壇報名詳細資訊</h2>
+            <h2 class="text-center text-3xl lg:text-6xl text-white pt-12">趨勢論壇報名詳細資訊</h2>
             <div class="line"></div>
         </div>
 
-        <div class="content-center flex flex-col  lg:flex-row justify-center p-4 pt-5">
+        <div class="content-center flex flex-col  lg:flex-row justify-center p-4 pt-5 md:pt-24 lg:pt-0">
             <div class="main pt-12 lg:pt-36 lg:pb-36">
                 <ul class="flex">
                     <div id="triangle"></div>
@@ -17,7 +17,7 @@
                 <hr>
                 <ul class="flex pt-4">
                     <div id="triangle"></div>
-                    <li class="text-left pl-4">
+                    <li class="text-left pl-4"> 
                         <p class="text-gold text-2xl  pb-4">參與方式</p>
                         <p class="lg:text-4xl text-white pb-4">Zoom Video Webinar線上串流直播</p>
                         <small class="text-left text-lg text-fifth">※提醒你!本課程為「線上直播」<br>為維護你的權益<br>請勿與他人共用你的專屬連結!</small>
@@ -79,11 +79,12 @@
         @media (max-width: 1280px){
             background-image: url('../assets/NewBg1.png');
             background-size: cover;
-
+            .line{
+                height: 6.5rem;
+            }
             hr {
                 display: block;
                 position: relative;
-                margin-left: 1rem;
                 width:22rem;
                 text-align:center;
                 margin-top:30px;
