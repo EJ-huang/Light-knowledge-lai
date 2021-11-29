@@ -1,14 +1,14 @@
 <template>
-        <div class="container-bg">
+        <div class="contenter-qu">
             <div class="flex flex-col text-center">
                 <div class="flex justify-center p-12">
                     <h2 class="text-6xl pt-12 text-gray-900 font-bold pb-12">常見問題</h2>
                     <div class="line"></div>
                 </div>
-                <div class="row flex flex-col pt-0  lg:p-12">
+                <div class="row flex flex-col pt-0  lg:p-12 que-1">
                     <img src="../assets/q1.png"  alt="">
-                    <img src="../assets/qcircle.png" id="one" class="hidden lg:block" alt="">
-                    <img src="../assets/qcircle2.png" id="two" class="block lg:hidden" alt="">
+                    <img src="../assets/qcircle.png" id="one" class="hidden lg:block img-one" alt="">
+                    <img src="../assets/qcircle2.png" id="two" class="block lg:hidden img-two" alt="">
                     <span class="text-black text-2xl font-bold">本課程採私人權限的「線上直播」，為維護你的權益，請勿與他人共用專屬連結。</span>
                 </div>
                 <div class="row flex flex-col pt-0 lg:p-12">
@@ -22,9 +22,8 @@
                 <div class="row flex flex-col pt-0 lg:p-12">
                     <img src="../assets/q4.png" alt="">
                     <span class="text-black text-left pl-12 text-2xl font-bold">可以加入尹星助教將盡快協助你!</span>
-                    <div class="flex flex-col lg:flex-row items-center">
-                        
-                        <img src="../assets/qLine.png" alt="">
+                    <div class="flex flex-col lg:flex-row items-center" >
+                        <img class="cursor-pointer" src="../assets/qLine.png" @click="url" alt="">
                         <p class="lg:pt-60">(點擊圖標跳轉LINE連結)</p>
                     </div>
                     
@@ -32,7 +31,7 @@
             </div>
             <div class="main bg-seventh flex flex-col lg:flex-row items-center justify-center lg:h-60  text-white p-8">
               <p class="lg:text-4xl p-4 gap-4">報名就有機會抽中『 陳波懶人不敗投資術課程 』<font class="text-gold">價值$8,800</font></p>
-                <button class="btn flex justify-center items-center gap-4 bg-orange hover:bg-blue-700 text-white font-bold py-2 px-12  rounded">
+                <button @click="url" class="btn flex justify-center items-center gap-4 bg-orange hover:bg-blue-700 text-white font-bold py-2 px-12  rounded">
                     <img src="../assets/arrorw.png" alt="">
                     <p>/ 搶佔免費講座席次</p>
                 </button>
@@ -42,9 +41,35 @@
         
 </template>
 
+<script>
+import { gsap } from "gsap";
+
+export default {
+    mounted: function () {
+        this.scrollTrigger();
+    },
+    methods: {
+        scrollTrigger(){
+            gsap.timeline({
+                scrollTrigger:{
+                    trigger: '.contenter-qu',
+                    start: 'top center',
+                    end: '20%',
+                    scrub: true,
+                }
+            })
+            .from(".que-1 .img-one", { y: -800, opacity: 0 , duration: 3 })
+            .from(".que-1 .img-two", { x : -100, y: 0, opacity: 0 , duration: 3 })
+        },
+        url(){
+            window.open("https://www.enstar.me/self-media-2");
+        }
+    }
+}
+</script>
 
 <style lang="scss" scoped>
-.container-bg{
+.contenter-qu{
     background-image: url('../assets/bg_qa.gif');
     background-size: cover;
     height: 100%;

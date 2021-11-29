@@ -23,7 +23,7 @@
                         <p class="text-left lg:text-4xl">操作股市，曾面臨兩次破產，接續用僅存的5萬8千元翻身成億萬大戶！具備全面的操作經驗，從小資金到大戶操作技巧皆親身嘗試並創造出完善且明確的「波式操盤體系」！</p>            
                         <img src="../assets/Group2.png" id="group" alt="">
                     </div>
-                    <div class="row-span-3" id="one">
+                    <div class="teacher-1 row-span-3" id="one">
                         <img src="../assets/teacher1.png" class="hidden lg:block" alt="">
                         <img src="../assets/teacher1_right.png" class="lg:hidden" alt="">
                     </div> 
@@ -32,7 +32,7 @@
             <div class=" flex justify-center pb-24">
 
                 <div class="title grid grid-flow-col pr-6 p-8 lg:p-0">
-                    <div class="row-span-3" id="two">
+                    <div class="teacher-2 row-span-3" id="two">
                         <img src="../assets/teacher2.png" class="hidden lg:block" alt="">
                         <img src="../assets/teacher2_left.png" class="lg:hidden" alt="">
                     </div>
@@ -69,7 +69,7 @@
                         <p class="text-left lg:text-4xl">因操作績效驚人，被金控自營部招攬為百萬操盤手，更達成傳奇成就：十年績效不曾為負、38歲擁6000萬退休、操作基金10年報酬高達166%！</p>            
                         <img src="../assets/Group2.png" id="group" alt="">
                     </div>
-                    <div class="row-span-3" id="one">
+                    <div class="teacher-3 row-span-3" id="one">
                         <img src="../assets/teacher3.png" class="hidden lg:block" alt="">
                         <img src="../assets/teacher3_right.png" class="lg:hidden" alt="">
                     </div> 
@@ -78,7 +78,7 @@
             <div class=" flex justify-center pb-24">
 
                 <div class="title grid grid-flow-col pr-6 p-8 lg:p-0">
-                    <div class="row-span-3" id="two">
+                    <div class="teacher-4 row-span-3" id="two">
                         <img src="../assets/teacher4.png" class="hidden lg:block" alt="">
                         <img src="../assets/teacher4_left.png" class="lg:hidden" alt="">
                     </div>
@@ -100,17 +100,63 @@
             </div>
         </div>
      </div>
-
-
-     <!-- <div class="grid grid-cols-1 lg:grid-cols-3">
-
-     </div> -->
-
-
-
 </template>
 
 
+
+<script>
+import { gsap } from "gsap";
+
+export default {
+    mounted: function () {
+        this.scrollTrigger();
+    },
+    methods: {
+        scrollTrigger(){
+            gsap.timeline({
+                scrollTrigger: {
+                    trigger: '.container-center',
+                    start: 'top center',
+                    end: '10%',
+                    scrub: true,
+                    // markers: true,
+                }
+            })
+            .from(".title .teacher-1", { x : 50, opacity: 0 , duration: 3 })
+
+            gsap.timeline({
+                scrollTrigger: {
+                    trigger: '.title .teacher-1',
+                    start: 'top center',
+                    end: '20%',
+                    scrub: true,
+                }
+            })
+            .from(".title .teacher-2", { x : -100, opacity: 0 , duration: 3 })
+
+            gsap.timeline({
+                scrollTrigger: {
+                    trigger: '.title .teacher-2',
+                    start: 'top center',
+                    end: '20%',
+                    scrub: true,
+                }
+            })
+            .from(".title .teacher-3", { x : 100, opacity: 0 , duration: 3 })
+
+            gsap.timeline({
+                scrollTrigger: {
+                    trigger: '.title .teacher-3',
+                    start: 'top center',
+                    end: '20%',
+                    scrub: true,
+                }
+            })
+            .from(".title .teacher-4", { x : -50, opacity: 0 , duration: 3 })
+        }
+    }  
+}
+</script>
 
 
 <style lang="scss" scoped>

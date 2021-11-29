@@ -8,30 +8,30 @@
                 <div class="swo"><img src="../assets/sword.png" alt=""></div>
             </div>
 
-            <div class="grid justify-items-center grid-cols-1 lg:grid-cols-3 lg:p-12">
-                <div class="box pb-4">
+            <div class="content-box grid justify-items-center grid-cols-1 lg:grid-cols-3 lg:p-12">
+                <div class="box1 pb-4">
                     <img src="../assets/class_1.png" alt="">
                 </div>
-                <div class="box">
+                <div class="box2">
                     <img src="../assets/class_4.png" alt="">
                 </div>
-                <div class="box">
+                <div class="box3">
                     <img src="../assets/class_2.png" alt="">
                 </div>
-                <div class="box pt-0">
+                <div class="box4 pt-0">
                     <img src="../assets/class_3.png" alt="">
                 </div>
-                <div class="box">
+                <div class="box5">
                     <img src="../assets/class_5.png" alt="">
                 </div>
-                <div class="box pt-0">
+                <div class="box6 pt-0">
                     <img src="../assets/class_6.png" alt="">
                 </div> 
             </div>
             <div class="content-center">
                 <h2 class="text-center lg:text-4xl p-12 lg:pb-40">全球股市或將迎來史上最大的「海嘯級行情」！   你做好準備了嗎？</h2>
             </div>
-            <div class="main2 p-4  flex flex-col items-center text-center lg:h-60  bg-third text-white">
+            <div class="content-footer main2 p-4  flex flex-col items-center text-center lg:h-60  bg-third text-white">
                 <div class="triangle"></div>
                 <div class="swo"><img src="../assets/Mask.png" alt=""></div>
               <p class="lg:text-4xl absolute mt-8 z-10">《百萬自媒體經營攻略 》</p>
@@ -41,9 +41,38 @@
 </template>
 
 
+<script>
+import { gsap } from "gsap";
+
+export default {
+    mounted: function () {
+        this.scrollTrigger();
+    },
+    methods: {
+        scrollTrigger(){
+            gsap.timeline({
+                scrollTrigger:{
+                    trigger: '.content-center',
+                    start: 'top center',
+                    end: '30%',
+                    scrub: true,
+                }
+            })
+            .from(".content-box .box1", { x : -10, y: 0, rotation: 360, opacity: 0 , duration: 3 })
+            .from(".content-box .box2", { x : -10, y: 100, rotation: 360, opacity: 0, duration: 3  })
+            .from(".content-box .box3", { x : -10, y: 200, rotation: 360, opacity: 0, duration: 3  })
+            .from(".content-box .box4", { x : 10, y: 0, rotation: 360, opacity: 0 , duration: 3 })
+            .from(".content-box .box5", { x : 10, y: 100, rotation: 360, opacity: 0, duration: 3  })
+            .from(".content-box .box6", { x : 10, y: 200, rotation: 360, opacity: 0, duration: 3  })
+        }
+    }
+}
+</script>
+
 
 <style lang="scss" scoped>
 .content-center{
+    position: relative;
     .qu{
         position: relative;
         .line{
@@ -65,7 +94,7 @@
             position: relative;
             width: 0;
             height: 0;
-            bottom: 5%;
+            bottom: 15%;
             border-style: solid;
             border-width: 0 100px 100px 100px;
             border-color: transparent transparent #324C5D transparent;
@@ -73,7 +102,7 @@
         .swo{
             position: absolute;
             right: 10%;
-            top: 37%;
+            top: 90%;
         }
     }
 

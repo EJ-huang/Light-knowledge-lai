@@ -31,8 +31,8 @@
                     <div class="pl-4 flex flex-col lg:flex-col">
                         <div class="side1"><p class="text-gold text-lg ">票價費用</p></div>
                         <div class="flex side2 lg:flex-row p-8 gap-4">
-                            <img src="../assets/ticket1.png" alt="">
-                            <img src="../assets/ticket2.png" alt="">
+                            <img src="../assets/ticket1.png" class="img01" alt="">
+                            <img src="../assets/ticket2.png" class="img02" alt="">
                         </div>
                     </div>
                 </div>
@@ -41,13 +41,40 @@
 
             <div class="main flex flex-col lg:flex-row items-center justify-center text-center lg:h-52  text-white p-8">
               <p class="lg:text-4xl mb-8">報名就有機會抽中『 陳波懶人不敗投資術課程 』<font class="text-gold">價值$8,800</font></p>
-                <button class="btn flex items-center justify-center gap-4 bg-orange hover:bg-blue-700 text-white font-bold py-2 px-12  rounded">
+                <button @click="url" class="btn flex items-center justify-center gap-4 bg-orange hover:bg-blue-700 text-white font-bold py-2 px-12  rounded">
                     <img src="../assets/arrorw.png" alt="">
                     <p>/ 搶佔免費講座席次</p>
                 </button>
            </div>
     </div>
 </template>
+
+<script>
+import { gsap } from "gsap";
+
+export default {
+    mounted: function () {
+        this.scrollTrigger();
+    },
+    methods: {
+        scrollTrigger(){
+            gsap.timeline({
+                scrollTrigger:{
+                    trigger: '.contenter-bg',
+                    start: 'top center',
+                    end: '30%',
+                    scrub: true,
+                }
+            })
+            .from(".side2 .img01", { x : -100, y: 0, opacity: 0 , duration: 3 })
+            .from(".side2 .img02", { x : 100, y: 0, opacity: 0 , duration: 3 })
+        },
+        url(){
+            window.open("https://www.enstar.me/self-media-2");
+        }
+    }
+}
+</script>
 
 <style lang="scss" scoped>
 .contenter-bg{

@@ -15,9 +15,6 @@
                     <div class="icon absolute z-0">
                       <img src="../assets/Ellipse.png"  alt="">
                     </div>
-                  <!-- <div class="header-box2 flex flex-col w-1/4" data-aos="fade-up" data-aos-duration="1500" data-aos-delay='1500'>
-                    <span>台股投資趨勢論壇4大頂尖交易人，帶你看見2022長線、短線獲利契機！</span>
-                  </div> -->
                   <div class="header-box3 z-10  text-left text-2xl" data-aos="fade-up" data-aos-duration="1500" data-aos-delay='1500'>
                     <span>台股投資趨勢論壇</span><br>
                     <p>4大頂尖交易人，帶你看見2022長線、短線獲利契機！</p>
@@ -28,32 +25,60 @@
           </div>
 
               <div class="header-box4  flex flex-row  sm:mt-24 lg:mt-40 lg:pl-80">
-                <div class="row">
+                <div class="row box1 hidden lg:block">
                     <div class="teacher-content1 absolute lg:hidden">
                         <div class="teacher-name  bg-white-500 ">投機之王 - 5萬8翻身上億資產</div>
                         <div class="line"></div>
                     </div>
                     <img src="../assets/wawa.png" alt="">
                     <img src="../assets/icon.png" class="pl-8 lg:pl-12" alt="">
-
                 </div>
-                <div class="  pt-20 ">
+                <div class="row box1-1 lg:hidden">
+                    <div class="teacher-content1 absolute lg:hidden">
+                        <div class="teacher-name  bg-white-500 ">投機之王 - 5萬8翻身上億資產</div>
+                        <div class="line"></div>
+                    </div>
+                    <img src="../assets/wawa.png" alt="">
+                    <img src="../assets/icon.png" class="pl-8 lg:pl-12" alt="">
+                </div>
+                <div class="pt-20 box2 hidden lg:block">
                     <img src="../assets/kai.png" alt="">
                     <div class="teacher-content2 absolute lg:hidden">
                         <div class="teacher-name  bg-white-500 ">外資歌神 - 曾任外資機構操盤管理職</div>
                         <div class="line2"></div>
                     </div>
                 </div>
-                <div class="">
+                <div class="pt-20 box2-2 lg:hidden">
+                    <img src="../assets/kai.png" alt="">
+                    <div class="teacher-content2 absolute lg:hidden">
+                        <div class="teacher-name  bg-white-500 ">外資歌神 - 曾任外資機構操盤管理職</div>
+                        <div class="line2"></div>
+                    </div>
+                </div>
+                <div class="box3 hidden lg:block">
                     <div class="teacher-content3 absolute lg:hidden">
                         <div class="teacher-name  bg-white-500 ">金控自營部操盤人 - 十年績效不曾為負</div>
                         <div class="line3"></div>
                     </div>
                         <img src="../assets/hor.png" alt="">
                         <img src="../assets/icon2.png" class="pl-8 lg:pl-12" alt="">
-                        <!-- <div class="teacher-name bg-white-500  pl-12 -mt-36 text-4xl ">冒牌生</div> -->
                 </div>
-                <div class=" pt-20">
+                <div class="box3-3 lg:hidden">
+                    <div class="teacher-content3 absolute lg:hidden">
+                        <div class="teacher-name  bg-white-500 ">金控自營部操盤人 - 十年績效不曾為負</div>
+                        <div class="line3"></div>
+                    </div>
+                        <img src="../assets/hor.png" alt="">
+                        <img src="../assets/icon2.png" class="pl-8 lg:pl-12" alt="">
+                </div>
+                <div class="pt-20 box4 hidden lg:block">
+                    <img src="../assets/lia.png" alt="">
+                    <div class="teacher-content4 absolute lg:hidden">
+                        <div class="teacher-name  bg-white-500 ">金融怪才 - 自學成材殺入全球交易競賽前四強</div>
+                        <div class="line4"></div>
+                    </div>
+                </div>
+                <div class="pt-20 box4-4 lg:hidden">
                     <img src="../assets/lia.png" alt="">
                     <div class="teacher-content4 absolute lg:hidden">
                         <div class="teacher-name  bg-white-500 ">金融怪才 - 自學成材殺入全球交易競賽前四強</div>
@@ -70,6 +95,30 @@
 
     
 </template>
+
+
+<script>
+import { gsap } from "gsap";
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+export default {
+    mounted: function () {
+        this.scrollTrigger();
+    },
+    methods: {
+      scrollTrigger(){
+        ScrollTrigger.matchMedia({
+          "(min-width: 768px)" : function(){
+          gsap.fromTo('.header-box4 .box1',{ y: -200, opacity: 0 },  { y: 0, opacity: 1, duration: 2})
+          gsap.fromTo('.header-box4 .box2',{ y: 200,opacity: 1 },  { y:-0,opacity: 1, duration: 4})
+          gsap.fromTo('.header-box4 .box3',{ y: -200,opacity: 1 },  { y:-0,opacity: 1, duration: 4})
+          gsap.fromTo('.header-box4 .box4',{ y: 200,opacity: 1 },  { y:-0,opacity: 1, duration: 4})
+          },
+        })
+      }
+    }
+}
+</script>
 
 <style lang="scss" scoped>
 // .container{

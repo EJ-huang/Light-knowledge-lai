@@ -15,15 +15,32 @@
                     </div>
                 </div>
                 <div class="icon flex lg:pt-24 items-center">
-                    <img src="../assets/fb.png" alt="">
-                    <img src="../assets/yt.png" alt="">
-                    <img src="../assets/line.png" alt="">
+                    <img src="../assets/fb.png" @click="url" alt="">
+                    <img src="../assets/yt.png" @click="yt" alt="">
+                    <img src="../assets/line.png" @click="line" alt="">
                 </div>
             </div>
         </footer>
 </div>
 
 </template>
+
+
+<script>
+export default {
+    methods: {
+        url(){
+            window.open("https://www.facebook.com/enstar.tw/");
+        },
+        yt(){
+            window.open("https://www.youtube.com/channel/UCCxR-ctkwkC7Ufi2d_LxHSg");
+        },
+        line(){
+            window.open("https://line.me/ti/p/I7MwD5yg14");
+        }
+    }
+}
+</script>
 
 <style lang="scss" scoped>
 // .main2{
