@@ -3,7 +3,7 @@
             <h2 class="text-center lg:text-4xl pt-12">想在2022開局拿到紅盤好績效</h2>
             <h2 class="text-center lg:text-4xl pt-12">提前為自己做好功課是必備的行動方針</h2>
             <div class="flex qu justify-center pt-12 md:pt-36 mb-8">
-                <h2 class="text-center p-2 lg:text-3xl bg-gray-900 text-white lg:w-1/4 ">以下問題，一定要提前了解！</h2>
+                <h2 class="text-center p-2 lg:text-3xl bg-gray-900 text-white">以下問題，一定要提前了解！</h2>
                 <div class="line"></div>
                 <div class="swo"><img src="../assets/sword.png" alt=""></div>
             </div>

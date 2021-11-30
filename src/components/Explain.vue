@@ -20,7 +20,7 @@
                             <li>用5萬8千元翻身成億萬大戶</li>
                         </ul>
                         <p class="pb-12 pr-12 pt-6 tracking-wide lg:text-3xl text-left text-third hidden lg:flex">股文觀指團隊創辦人 / 用5萬8千元翻身成億萬大戶</p>
-                        <p class="text-left lg:text-4xl">操作股市，曾面臨兩次破產，接續用僅存的5萬8千元翻身成億萬大戶！具備全面的操作經驗，從小資金到大戶操作技巧皆親身嘗試並創造出完善且明確的「波式操盤體系」！</p>            
+                        <p class="text-left lg:text-3xl">操作股市，曾面臨兩次破產，接續用僅存的5萬8千元翻身成億萬大戶！具備全面的操作經驗，從小資金到大戶操作技巧皆親身嘗試並創造出完善且明確的「波式操盤體系」！</p>            
                         <img src="../assets/Group2.png" id="group" alt="">
                     </div>
                     <div class="teacher-1 row-span-3" id="one">
@@ -48,7 +48,7 @@
                             <li>曾任外資與投信專業操盤人</li>
                         </ul>
                         <p class="pb-12 pr-12 pt-6 tracking-wide lg:text-3xl text-left text-third hidden lg:flex">股文觀指團隊創辦人 / 曾任外資與投信專業操盤人</p>
-                        <p class="text-left lg:text-4xl tracking-widest">曾任新加坡外資集團操盤人，現為股文觀指團隊聯合創始人，具備強大的產經分析能力，善於運用外資角度從總經、基本面、技術分析解析股市走向，為投資人提供最全面且邏輯嚴謹的分析看法！</p>            
+                        <p class="text-left lg:text-3xl tracking-widest">曾任新加坡外資集團操盤人，現為股文觀指團隊聯合創始人，具備強大的產經分析能力，善於運用外資角度從總經、基本面、技術分析解析股市走向，為投資人提供最全面且邏輯嚴謹的分析看法！</p>            
                         <img src="../assets/Group2.png" id="group" alt="">
                     </div>
                 </div>
@@ -66,7 +66,7 @@
                             <li>十年績效不曾為負</li>
                         </ul>
                         <p class="pb-12 pr-12 pt-6 tracking-wide lg:text-3xl text-left text-third hidden lg:flex">金控自營部操盤人 / 十年績效不曾為負</p>
-                        <p class="text-left lg:text-4xl">因操作績效驚人，被金控自營部招攬為百萬操盤手，更達成傳奇成就：十年績效不曾為負、38歲擁6000萬退休、操作基金10年報酬高達166%！</p>            
+                        <p class="text-left lg:text-3xl">因操作績效驚人，被金控自營部招攬為百萬操盤手，更達成傳奇成就：十年績效不曾為負、38歲擁6000萬退休、操作基金10年報酬高達166%！</p>            
                         <img src="../assets/Group2.png" id="group" alt="">
                     </div>
                     <div class="teacher-3 row-span-3" id="one">
@@ -93,7 +93,7 @@
                             <li>自學成材殺入全球交易競賽前四強</li>
                         </ul>
                         <p class="pb-12 pr-12 pt-6 tracking-wide lg:text-3xl text-left text-third hidden lg:flex">自學成材殺入全球交易競賽前四強</p>
-                        <p class="text-left lg:text-4xl tracking-widest">全球交易競賽前四強徐諒諒老師 – 曾歷經整整2年地獄訓練，研究35,040張盤勢以及上百種操作模式，並在全球交易競賽遭遇華爾街操盤團隊，2周創造4倍績效，殺入前四強！具備短線精準預測的強大交易實力。老師精通各項交易工具與技術，將給予你明確的操作方向與見解。  </p>            
+                        <p class="text-left lg:text-3xl tracking-widest">全球交易競賽前四強徐諒諒老師 – 曾歷經整整2年地獄訓練，研究35,040張盤勢以及上百種操作模式，並在全球交易競賽遭遇華爾街操盤團隊，2周創造4倍績效，殺入前四強！具備短線精準預測的強大交易實力。老師精通各項交易工具與技術，將給予你明確的操作方向與見解。  </p>            
                         <img src="../assets/Group2.png" id="group" alt="">
                     </div>
                 </div>
@@ -119,16 +119,15 @@ export default {
                     start: 'top center',
                     end: '10%',
                     scrub: true,
-                    // markers: true,
                 }
             })
-            .from(".title .teacher-1", { x : 50, opacity: 0 , duration: 3 })
+            .from(".title .teacher-1", { x : -50, opacity: 0 , duration: 3 })
 
             gsap.timeline({
                 scrollTrigger: {
                     trigger: '.title .teacher-1',
                     start: 'top center',
-                    end: '20%',
+                    end: '30%',
                     scrub: true,
                 }
             })
@@ -138,17 +137,17 @@ export default {
                 scrollTrigger: {
                     trigger: '.title .teacher-2',
                     start: 'top center',
-                    end: '20%',
+                    end: '30%',
                     scrub: true,
                 }
             })
-            .from(".title .teacher-3", { x : 100, opacity: 0 , duration: 3 })
+            .from(".title .teacher-3", { x : -80, opacity: 0 , duration: 3 })
 
             gsap.timeline({
                 scrollTrigger: {
                     trigger: '.title .teacher-3',
                     start: 'top center',
-                    end: '20%',
+                    end: '30%',
                     scrub: true,
                 }
             })

@@ -47,7 +47,7 @@ import { gsap } from "gsap";
 
 export default {
     mounted: function () {
-        this.color();
+        // this.color();
     },
     methods: {
         color(){

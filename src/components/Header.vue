@@ -6,21 +6,24 @@
                   <img src="../assets/logo1.png" alt="">
                 </div>
 
-                  <div class="header-box1 text-left z-10 space-y-4" data-aos="fade-down" data-aos-duration="1500" data-aos-delay='1500'>
+                  <div class="header-box1 text-left z-10 space-y-4">
                     <span>各國瘋狂印鈔後</span><br>
                     <span>全球通膨急遽升溫、國際指數不斷堆高… </span><br>
-                    <span class="text-4xl flex-wrap">2022年的股市</span><br>
-                    <span>是否將迎來<font>雪崩般暴跌？</font></span>
+                    <span class="text-2xl lg:text-5xl flex-wrap">2022年的股市</span><br>
+                    <span class="text-2xl lg:text-5xl">是否將迎來<font>雪崩般暴跌？</font></span>
                   </div>
                     <div class="icon absolute z-0">
                       <img src="../assets/Ellipse.png"  alt="">
                     </div>
-                  <div class="header-box3 z-10  text-left text-2xl" data-aos="fade-up" data-aos-duration="1500" data-aos-delay='1500'>
+                  <div class="header-box3 z-10  text-left text-2xl">
                     <span>台股投資趨勢論壇</span><br>
                     <p>4大頂尖交易人，帶你看見2022長線、短線獲利契機！</p>
                   </div>
-                  <div class="icon2 absolute z-0">
+                  <div class="icon2 absolute z-0 lg:hidden">
                     <img src="../assets/Group1.png"  alt="">
+                  </div>
+                  <div class="icon3 absolute z-0">
+                    <img src="../assets/logo2.png"  alt="">
                   </div>
           </div>
 
@@ -146,6 +149,10 @@ export default {
       bottom: 30%;
       left: 10%;
     }
+    .icon3{
+      bottom: 35%;
+      left: 10%;
+    }
     .header-box1{
       position: absolute;
       top: 20%;
@@ -157,9 +164,8 @@ export default {
     }
     .header-box3{
       position: absolute;
-      top: 55%;
+      bottom: 50%;
       left: 10%;
-      // font-size: 36px;
       .header-box3_inside{
         padding: 5px;
         background: rgba(255, 255, 255, 0.8);
@@ -189,17 +195,22 @@ export default {
           bottom: 70%;
           left: 10%;
         }
+        .icon3{
+          padding: 10px;
+          bottom: 23%;
+          left: 0;
+        }
         .header-box1{
           font-size: 12px;
           top: 10%;
         }
         .header-box3{
           font-size: 12px;
-          top: 22%;
+          top: 20%;
         }
         .header-box4{
           padding: 30px;
-          margin-top: 25rem;
+          margin-top: 23rem;
           .teacher-content1{
             background-color: #fff;
             padding: 5px;
@@ -266,7 +277,10 @@ export default {
         }
       }
     }
-    @media (max-width: 1024px) and (min-width: 376px){
+    @media (min-width: 428px) and (max-height: 926px){
+      .main{
+        margin-top: 5rem;
+      }
       .header{
         .header-box4{
           padding-left: 0;
@@ -314,8 +328,8 @@ export default {
             padding: 5px;
             color: #595757;
             font-size: 12px;
-            // bottom: 8%;
-            left: 20%;
+            bottom: 24%;
+            left: 15%;
             .line2{
               border-right: 1px solid #fff;
               height: 10px;
@@ -330,7 +344,7 @@ export default {
             padding: 5px;
             color: #595757;
             font-size: 12px;
-            top: 48%;
+            top: 38%;
             right: 5%;
             .line3{
               border-right: 1px solid #fff;
@@ -346,7 +360,107 @@ export default {
             padding: 5px;
             color: #595757;
             font-size: 12px;
-            // bottom: 3%;
+            bottom: 20%;
+            right: 8%;
+            .line4{
+              border-right: 1px solid #fff;
+              height: 50px;
+              position: absolute;
+              right: 10%;
+              bottom: 100%;
+              transform: rotate(-20deg);
+            }
+          }
+        }
+      }
+    }
+    @media (max-width: 1024px) and (min-width: 376px){
+      .header{
+        .header-box4{
+          padding-left: 0;
+        }
+        background-size: cover;
+        // height: 100vh;
+        .header-img{
+          left: 10%;
+        }
+        .icon{
+          top: 20%;
+          left: 10%;
+        }
+        .icon2{
+          bottom: 70%;
+          left: 10%;
+        }
+        .icon3{
+          bottom: 18%;
+          left: 5%;
+        }
+        .header-box1{
+          font-size: 12px;
+          top: 10%;
+        }
+        .header-box3{
+          font-size: 12px;
+          top: 20%;
+        }
+        .header-box4{
+          padding: 30px;
+          margin-top: 27rem;
+          // margin-bottom: 10rem;
+          .teacher-content1{
+            background-color: #fff;
+            padding: 5px;
+            color: #595757;
+            font-size: 12px;
+            top: 34%;
+            .line{
+              border-right: 1px solid #fff;
+              height: 60px;
+              position: absolute;
+              left: 10%;
+              top: 100%;
+              transform: rotate(-20deg);
+            }
+          }
+          .teacher-content2{
+            background-color: #fff;
+            padding: 5px;
+            color: #595757;
+            font-size: 12px;
+            bottom: 32%;
+            left: 15%;
+            .line2{
+              border-right: 1px solid #fff;
+              height: 10px;
+              position: absolute;
+              left: 60%;
+              bottom: 100%;
+              transform: rotate(-20deg);
+            }
+          }
+          .teacher-content3{
+            background-color: #fff;
+            padding: 5px;
+            color: #595757;
+            font-size: 12px;
+            top: 38%;
+            right: 5%;
+            .line3{
+              border-right: 1px solid #fff;
+              height: 18px;
+              position: absolute;
+              left: 30%;
+              top: 100%;
+              transform: rotate(-20deg);
+            }
+          }
+          .teacher-content4{
+            background-color: #fff;
+            padding: 5px;
+            color: #595757;
+            font-size: 12px;
+            bottom: 28%;
             // right: 8%;
             .line4{
               border-right: 1px solid #fff;
@@ -364,9 +478,12 @@ export default {
 
     }
     @media (max-width: 1024px) {
+      .main{
+        margin-top: 10rem;
+      }
       .teacher-content4{
-        right: 5rem;
-        bottom: 2rem;
+        right: 5%;
+        bottom: 15%;
       }
       .header-box4{
         margin-top: 22rem;

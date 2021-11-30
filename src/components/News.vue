@@ -5,19 +5,19 @@
             <div class="line"></div>
         </div>
 
-        <div class="content-center flex flex-col  lg:flex-row justify-center p-4 pt-5 md:pt-24 lg:pt-0">
-            <div class="main pt-12 lg:pt-36 lg:pb-36">
+        <div class="content-center flex flex-col  lg:flex-row justify-center p-4 xl:pl-16 pt-5 md:pt-24 lg:pt-0">
+            <div class="main pt-12 md:pt-0 lg:pt-36 xl:pt-16">
                 <ul class="flex">
                     <div id="triangle"></div>
                     <li class="text-left pl-4 lg:pb-24">
-                        <p class="text-gold text-2xl pb-4">活動日期</p>
-                        <p class="text-4xl">2021/12/09 (四)  19:30 - 21:00</p>
+                        <p class="text-gold  text-2xl pb-4">活動日期</p>
+                        <p class="text-4xl text-white">2021/12/09 (四)  19:30 - 21:00</p>
                     </li>
                 </ul>
                 <hr>
                 <ul class="flex pt-4">
                     <div id="triangle"></div>
-                    <li class="text-left pl-4"> 
+                    <li class="text-left pl-4">
                         <p class="text-gold text-2xl  pb-4">參與方式</p>
                         <p class="lg:text-4xl text-white pb-4">Zoom Video Webinar線上串流直播</p>
                         <small class="text-left text-lg text-fifth">※提醒你!本課程為「線上直播」<br>為維護你的權益<br>請勿與他人共用你的專屬連結!</small>
@@ -25,7 +25,7 @@
                 </ul>
             </div>
             <hr>
-            <div class="aside pt-4 lg:pt-36">
+            <div class="aside pt-4 md:pt-0 lg:pt-36 xl:pt-16">
                 <div class="flex lg:ml-6  pr-36">
                     <div class="flex" id="triangle"></div>
                     <div class="pl-4 flex flex-col lg:flex-col">
@@ -39,7 +39,7 @@
             </div>
         </div>
 
-            <div class="main flex flex-col lg:flex-row items-center justify-center text-center lg:h-52  text-white p-8">
+            <div class="main flex flex-col lg:flex-row items-center justify-center lg:h-52 lg:pt-28 text-white p-8">
               <p class="lg:text-4xl mb-8">報名就有機會抽中『 陳波懶人不敗投資術課程 』<font class="text-gold">價值$8,800</font></p>
                 <button @click="url" class="btn flex items-center justify-center gap-4 bg-orange hover:bg-blue-700 text-white font-bold py-2 px-12  rounded">
                     <img src="../assets/arrorw.png" alt="">
@@ -66,8 +66,8 @@ export default {
                     scrub: true,
                 }
             })
-            .from(".side2 .img01", { x : -100, y: 0, opacity: 0 , duration: 3 })
-            .from(".side2 .img02", { x : 100, y: 0, opacity: 0 , duration: 3 })
+            .from(".side2 .img01", { x : -100, y: 0, opacity: 0 , duration: 3 ,autoAlpha: 1, })
+            .from(".side2 .img02", { x : -80, y: 0, opacity: 0 , duration: 3 ,autoAlpha: 1, })
         },
         url(){
             window.open("https://www.enstar.me/self-media-2");
@@ -112,7 +112,7 @@ export default {
             hr {
                 display: block;
                 position: relative;
-                width:22rem;
+                width:21rem;
                 text-align:center;
                 margin-top:30px;
                 border-bottom:2px dashed #489EBD;

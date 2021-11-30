@@ -39,9 +39,9 @@ export default {
                     scrub: true,
                 }
             })
-            .from(".inside .box-ad1", { x : -100, y: 0, opacity: 0 , duration: 3 })
-            .from(".inside .box-ad2", { x : -200, y: 0, opacity: 0 , duration: 3 })
-            .from(".inside .box-ad3", { x : -300, y: 0, opacity: 0 , duration: 3 })
+            .from(".inside .box-ad1", { x : -100, y: 0, opacity: 0 , duration: 3, autoAlpha: 1 })
+            .from(".inside .box-ad2", { x : -200, y: 0, opacity: 0 , duration: 3 ,autoAlpha: 1 })
+            .from(".inside .box-ad3", { x : -300, y: 0, opacity: 0 , duration: 3 ,autoAlpha: 1 })
         }
     }
 }
