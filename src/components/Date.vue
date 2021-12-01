@@ -7,7 +7,7 @@
             </div>
 
 
-            <div class="flex flex-col items-center text-2xl lg:text-4xl text-center space-y-8 pt-20">
+            <div class="flex flex-col items-center text-2xl lg:text-4xl text-center space-y-8 p-4 pt-20">
                 <p class="justify-center bg-gray-200 text-secondary lg:text-6xl pb-2 num">01</p>
                 <h2 class="text-left font-bold  pb-2">投資人在年末，最該注意什麼？</h2>
                  <p class="flex justify-center bg-secondary w-11/12 lg:w-3/4 text-white p-2 container-word_1">許多人認為產業成長在未來將衰退，2022台股能上2萬點嗎？</p>
@@ -15,7 +15,7 @@
             </div>
             <hr>
 
-            <div class="flex flex-col items-center text-2xl lg:text-4xl text-center space-y-8 pt-20">
+            <div class="flex flex-col items-center text-2xl lg:text-4xl text-center space-y-8 p-4 pt-20">
                 <p class="justify-center bg-gray-200 text-secondary lg:text-6xl pb-2 num">02</p>
                 <h2 class="text-left font-bold  pb-2">國際通膨與升息對股市的影響及應變方向</h2>
                  <p class="justify-center bg-secondary  w-4/5 lg:w-3/4 text-white p-2 container-word_2">通膨發酵，美國很可能升息，對於股市未來走勢，會產生哪些化學變化？</p>
@@ -24,7 +24,7 @@
             </div>
             <hr>
 
-            <div class="flex flex-col items-center text-2xl lg:text-4xl text-center space-y-8 pt-20">
+            <div class="flex flex-col items-center text-2xl lg:text-4xl text-center space-y-8 p-4 pt-20">
                 <p class="justify-center bg-gray-200 text-secondary lg:text-6xl pb-2 num">03</p>
                 <h2 class="text-left font-bold  pb-2">2022台股投資佈局要點與重點操作題材</h2>
                  <p class="justify-center bg-secondary  w-4/5 lg:w-3/4 text-white p-2 container-word_3">許多人認為產業成長在未來將衰退，2022台股能上2萬點嗎？</p>
@@ -32,7 +32,7 @@
             </div>
             <hr>
 
-            <div class="flex flex-col items-center text-2xl lg:text-4xl text-center space-y-8 pt-20 pb-24">
+            <div class="flex flex-col items-center text-2xl lg:text-4xl text-center space-y-8 p-4 pt-20 pb-24">
                 <p class="justify-center bg-gray-200 text-secondary lg:text-6xl pb-2 num">04</p>
                 <h2 class="text-left font-bold  pb-2">2022投資交易具體策略與應變措施</h2>
                  <p class="justify-center bg-secondary  w-4/5 lg:w-3/4 text-white p-2 container-word_4">面對通膨壓力、產業低基期的影響，在2022投資上具體的策略是什麼？</p>

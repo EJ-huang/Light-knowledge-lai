@@ -11,7 +11,7 @@
                     <div id="triangle"></div>
                     <li class="text-left pl-4 lg:pb-24">
                         <p class="text-gold  text-2xl pb-4">活動日期</p>
-                        <p class="text-4xl text-white">2021/12/09 (四)  19:30 - 21:00</p>
+                        <p class="lg:text-4xl text-white">2021/12/09 (四)  19:30 - 21:00</p>
                     </li>
                 </ul>
                 <hr>

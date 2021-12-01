@@ -36,14 +36,14 @@
                     <img src="../assets/wawa.png" alt="">
                     <img src="../assets/icon.png" class="pl-8 lg:pl-12" alt="">
                 </div>
-                <div class="row box1-1 lg:hidden">
+                <!-- <div class="row box1-1 lg:hidden">
                     <div class="teacher-content1 absolute lg:hidden">
                         <div class="teacher-name  bg-white-500 ">投機之王 - 5萬8翻身上億資產</div>
                         <div class="line"></div>
                     </div>
                     <img src="../assets/wawa.png" alt="">
                     <img src="../assets/icon.png" class="pl-8 lg:pl-12" alt="">
-                </div>
+                </div> -->
                 <div class="pt-20 box2 hidden lg:block">
                     <img src="../assets/kai.png" alt="">
                     <div class="teacher-content2 absolute lg:hidden">
@@ -51,13 +51,13 @@
                         <div class="line2"></div>
                     </div>
                 </div>
-                <div class="pt-20 box2-2 lg:hidden">
+                <!-- <div class="pt-20 box2-2 lg:hidden">
                     <img src="../assets/kai.png" alt="">
                     <div class="teacher-content2 absolute lg:hidden">
                         <div class="teacher-name  bg-white-500 ">外資歌神 - 曾任外資機構操盤管理職</div>
                         <div class="line2"></div>
                     </div>
-                </div>
+                </div> -->
                 <div class="box3 hidden lg:block">
                     <div class="teacher-content3 absolute lg:hidden">
                         <div class="teacher-name  bg-white-500 ">金控自營部操盤人 - 十年績效不曾為負</div>
@@ -66,14 +66,14 @@
                         <img src="../assets/hor.png" alt="">
                         <img src="../assets/icon2.png" class="pl-8 lg:pl-12" alt="">
                 </div>
-                <div class="box3-3 lg:hidden">
+                <!-- <div class="box3-3 lg:hidden">
                     <div class="teacher-content3 absolute lg:hidden">
                         <div class="teacher-name  bg-white-500 ">金控自營部操盤人 - 十年績效不曾為負</div>
                         <div class="line3"></div>
                     </div>
                         <img src="../assets/hor.png" alt="">
                         <img src="../assets/icon2.png" class="pl-8 lg:pl-12" alt="">
-                </div>
+                </div> -->
                 <div class="pt-20 box4 hidden lg:block">
                     <img src="../assets/lia.png" alt="">
                     <div class="teacher-content4 absolute lg:hidden">
@@ -81,12 +81,21 @@
                         <div class="line4"></div>
                     </div>
                 </div>
-                <div class="pt-20 box4-4 lg:hidden">
+                <!-- <div class="pt-20 box4-4 lg:hidden">
                     <img src="../assets/lia.png" alt="">
                     <div class="teacher-content4 absolute lg:hidden">
                         <div class="teacher-name  bg-white-500 ">金融怪才 - 自學成材殺入全球交易競賽前四強</div>
                         <div class="line4"></div>
                     </div>
+                </div> -->
+
+
+                <div class="box4-4 lg:hidden">
+                    <img src="../assets/teacher-mb.png" alt="">
+                    <!-- <div class="teacher-content4 absolute lg:hidden">
+                        <div class="teacher-name  bg-white-500 ">金融怪才 - 自學成材殺入全球交易競賽前四強</div>
+                        <div class="line4"></div>
+                    </div> -->
                 </div>
             </div>
           </div>
@@ -146,7 +155,7 @@ export default {
       left: 10%;
     }
     .icon2{
-      bottom: 30%;
+      bottom: 40%;
       left: 10%;
     }
     .icon3{
@@ -155,7 +164,7 @@ export default {
     }
     .header-box1{
       position: absolute;
-      top: 20%;
+      top: 10%;
       left: 10%;
       font-size: 36px;
       font{
@@ -286,10 +295,10 @@ export default {
           padding-left: 0;
         }
         background-size: cover;
-        height: 100vh;
-        .header-img{
-          left: 10%;
-        }
+        // height: 100vh;
+        // .header-img{
+        //   left: 10%;
+        // }
         .icon{
           top: 20%;
           left: 10%;
@@ -302,10 +311,10 @@ export default {
           font-size: 12px;
           top: 10%;
         }
-        .header-box3{
-          font-size: 12px;
-          top: 20%;
-        }
+        // .header-box3{
+        //   font-size: 12px;
+        //   top: 20%;
+        // }
         .header-box4{
           padding: 30px;
           .teacher-content1{
@@ -374,7 +383,7 @@ export default {
         }
       }
     }
-    @media (max-width: 1024px) and (min-width: 376px){
+    @media (max-width: 765px) and (min-width: 376px){
       .header{
         .header-box4{
           padding-left: 0;
@@ -393,12 +402,12 @@ export default {
           left: 10%;
         }
         .icon3{
-          bottom: 18%;
-          left: 5%;
+          bottom: 25%;
+          left: 30%;
         }
         .header-box1{
           font-size: 12px;
-          top: 10%;
+          // top: 23%;
         }
         .header-box3{
           font-size: 12px;
@@ -406,7 +415,7 @@ export default {
         }
         .header-box4{
           padding: 30px;
-          margin-top: 27rem;
+          // margin-top: 27rem;。
           // margin-bottom: 10rem;
           .teacher-content1{
             background-color: #fff;
@@ -471,28 +480,50 @@ export default {
               transform: rotate(-20deg);
             }
           }
+          .box4-4{
+            padding-top: 24rem;
+          }
         }
       }
     }
     @media (max-width: 768px) {
 
     }
-    @media (max-width: 1024px) {
-      .main{
-        margin-top: 10rem;
-      }
-      .teacher-content4{
-        right: 5%;
-        bottom: 15%;
-      }
-      .header-box4{
-        margin-top: 22rem;
-      }
-    }
-    @media (max-width: 1440px){
+    @media (min-width: 1024px) and (max-width: 1440px) {
       .header{
+        .icon3{
+          bottom: 25%;
+          left: 30%;
+        }
+        .header-box3{
+          top: 25%;
+        }
+        .main{
+          margin-top: 10rem;
+        }
+        .teacher-content4{
+          right: 5%;
+          bottom: 15%;
+        }
         .header-box4{
-          // padding-left: 50rem;
+          margin-top: 22rem;
+        }
+      }
+
+    }
+    @media (min-width: 1440px){
+      .header{
+        .header-img{
+          right: 10%;
+        }
+        .header-box1{
+          font-size: 24px;
+        }
+        .header-box3{
+          top: 30%;
+        }
+        .header-box4{
+          padding-left: 50rem;
         }
       }
     }

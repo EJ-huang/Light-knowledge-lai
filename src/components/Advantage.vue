@@ -57,9 +57,11 @@ export default {
         position: absolute;
     }
 
-    @media (max-width: 375px){
-        .line{
-            height: 7rem;
+    @media (max-width: 376px){
+        .container-ad{
+            .line{
+                height: 6rem;
+            }
         }
     }
 }
