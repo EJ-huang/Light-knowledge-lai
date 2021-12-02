@@ -1,8 +1,8 @@
 <template>
         <div class="contenter-qu">
-            <div class="flex flex-col text-center">
+            <div class="flex flex-col text-center p-2 lg:p-60">
                 <div class="flex justify-center p-12">
-                    <h2 class="text-6xl pt-12 text-gray-900 font-bold pb-12">常見問題</h2>
+                    <h2 class="text-3xl lg:text-6xl pt-12 text-gray-900 font-bold pb-12">常見問題</h2>
                     <div class="line"></div>
                 </div>
                 <div class="row flex flex-col p-4 pt-0  lg:p-12 que-1">
@@ -10,22 +10,22 @@
                     <img src="../assets/q1-1.png"  class="block lg:hidden" alt="">
                     <img src="../assets/qcircle.png" id="one" class="hidden lg:block img-one" alt="">
                     <img src="../assets/qcircle2.png" id="two" class="block lg:hidden img-two" alt="">
-                    <span class="text-black text-left lg:text-center pl-4 text-2xl font-bold">本課程採私人權限的「線上直播」，為維護你的權益，請勿與他人共用專屬連結。</span>
+                    <span class="text-black text-left lg:text-center pt-8 pl-4 text-2xl font-bold">本課程採私人權限的「線上直播」，為維護你的權益，請勿與他人共用專屬連結。</span>
                 </div>
                 <div class="row flex flex-col pt-0 lg:p-12">
                     <img src="../assets/q2.png" class="hidden lg:block" alt="">
                     <img src="../assets/q2-1.png"  class="block lg:hidden" alt="">
-                    <span class="text-black text-left lg:text-center pl-4 text-2xl font-bold">講座中每隔一小時將休息5-10分鐘，起身喝水，動一下，讓專注力更集中!</span>
+                    <span class="text-black text-left lg:text-center pt-7 pl-4 text-2xl font-bold">講座中每隔一小時將休息5-10分鐘，起身喝水，動一下，讓專注力更集中!</span>
                 </div>
-                <div class="row flex flex-col pt-0 lg:p-12">
+                <div class="row flex flex-col pt-7 lg:p-12">
                     <img src="../assets/q3.png" class="hidden lg:block" alt="">
                     <img src="../assets/q3-1.png"  class="block lg:hidden" alt="">
-                    <span class="text-black text-left lg:text-center pl-4 text-2xl font-bold">為確保有流暢的學習過程，請關閉視訊與聲音功能<br>講座中除了講師畫面、簡報外，學員不會看到彼此的資訊!</span>
+                    <span class="text-black text-left lg:text-center pt-7 pl-4 text-2xl font-bold">為確保有流暢的學習過程，請關閉視訊與聲音功能<br>講座中除了講師畫面、簡報外，學員不會看到彼此的資訊!</span>
                 </div>
-                <div class="row flex flex-col pt-0 lg:p-12">
+                <div class="row flex flex-col pt-7 lg:p-12">
                     <img src="../assets/q4.png" class="hidden lg:block" alt="">
                     <img src="../assets/q4-1.png"  class="block lg:hidden" alt="">
-                    <span class="text-black text-left lg:text-center pl-4 text-2xl font-bold">可以加入尹星助教將盡快協助你!</span>
+                    <span class="text-black text-left lg:text-center pt-7 pl-4 text-2xl font-bold">可以加入尹星助教將盡快協助你!</span>
                     <div class="flex flex-col lg:flex-row items-center" >
                         <img class="cursor-pointer" src="../assets/qLine.png" @click="url" alt="">
                         <p class="lg:pt-60">(點擊圖標跳轉LINE連結)</p>

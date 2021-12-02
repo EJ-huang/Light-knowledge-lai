@@ -1,5 +1,6 @@
 <template>
-    <div class="content-center mt-8">
+    <div class="content-center mt-8 ">
+        <div class="p-12">
             <h2 class="text-center text-3xl lg:text-4xl pt-12">想在2022開局拿到紅盤好績效</h2>
             <h2 class="text-center text-3xl lg:text-4xl pt-12">提前為自己做好功課是必備的行動方針</h2>
             <div class="flex qu justify-center pt-12 md:pt-36 mb-8">
@@ -29,13 +30,15 @@
                 </div> 
             </div>
             <div class="content-center">
-                <h2 class="text-center lg:text-4xl p-12 lg:pb-40">全球股市或將迎來史上最大的「海嘯級行情」！   你做好準備了嗎？</h2>
+                <h2 class="text-center  lg:text-4xl p-12 lg:pb-40">全球股市或將迎來史上最大的「海嘯級行情」！   你做好準備了嗎？</h2>
             </div>
+
+        </div>
             <div class="content-footer main2 p-4  flex flex-col items-center text-center lg:h-60  bg-third text-white">
                 <div class="triangle"></div>
                 <div class="swo"><img src="../assets/Mask.png" alt=""></div>
-              <p class="lg:text-4xl absolute mt-8 z-10">《百萬自媒體經營攻略 》</p>
-              <p class="lg:text-4xl pb-4">不僅告訴你未來趨勢，更幫助你確立2022的最佳交易策略</p>
+              <p class="text-2xl lg:text-4xl absolute mt-8 z-10">《 台股投資趨勢論壇 》</p>
+              <p class="text-2xl lg:text-4xl pb-4">不僅告訴你未來趨勢，更幫助你確立2022的最佳交易策略</p>
            </div>
     </div>
 </template>

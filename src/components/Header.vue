@@ -6,28 +6,39 @@
                   <img src="../assets/logo1.png" alt="">
                 </div>
 
-                  <div class="header-box1 text-left z-10 space-y-4">
+                  <div class="header-box1 text-left z-10 space-y-4 hidden  lg:block">
+                    <span class="">各國瘋狂印鈔後</span><br>
+                    <span class="">全球通膨急遽升溫、國際指數不斷堆高… </span><br>
+                    <span class="text-4xl lg:text-5xl flex-wrap">2022年的股市</span><br>
+                    <span class="text-4xl lg:text-5xl">是否將迎來<font>雪崩般暴跌？</font></span>
+                  </div>
+                  <div class="header-box1 text-left z-10 space-y-4 lg:hidden">
                     <span>各國瘋狂印鈔後</span><br>
-                    <span>全球通膨急遽升溫、國際指數不斷堆高… </span><br>
-                    <span class="text-2xl lg:text-5xl flex-wrap">2022年的股市</span><br>
-                    <span class="text-2xl lg:text-5xl">是否將迎來<font>雪崩般暴跌？</font></span>
+                    <span>全球通膨急遽升溫、國際指數 </span><br>
+                    <span>不斷堆高…</span><br>
+                    <span class="text-4xl flex-wrap">2022年</span><br>
+                    <span class="text-4xl">股市是否將迎來</span><br>
+                    <span class="text-4xl"><font>雪崩般暴跌？</font></span>
                   </div>
                     <div class="icon absolute z-0">
                       <img src="../assets/Ellipse.png"  alt="">
                     </div>
-                  <div class="header-box3 z-10  text-left text-2xl">
+                  <div class="header-box3 z-10  text-left text-3xl hidden  lg:block">
                     <span>台股投資趨勢論壇</span><br>
-                    <p>4大頂尖交易人，帶你看見2022長線、短線獲利契機！</p>
+                    <p> 4大頂尖交易人，帶你看見2022長線 、短線獲利契機！</p>
                   </div>
-                  <div class="icon2 absolute z-0 lg:hidden">
-                    <img src="../assets/Group1.png"  alt="">
+                  <div class="header-box3 z-10  text-left text-4xl lg:hidden">
+                    <span>台股投資趨勢論壇</span><br>
+                    <p>4大頂尖交易人</p>
+                    <p>帶你看見2022長線、短線獲利契機！</p>
                   </div>
-                  <div class="icon3 absolute z-0">
-                    <img src="../assets/logo2.png"  alt="">
+                  <div class="icon3 flex flex-col flex-wrap justify-center items-center absolute z-0">
+                    <img src="../assets/logo2.png" class="pb-12"  alt="">
+                    <img src="../assets/arrow-down.png" class="lg:hidden" alt="">
                   </div>
           </div>
 
-              <div class="header-box4  flex flex-row  sm:mt-24 lg:mt-40 lg:pl-80">
+              <div class="header-box4  flex flex-row  sm:mt-24 lg:mt-36 lg:pl-80">
                 <div class="row box1 hidden lg:block">
                     <div class="teacher-content1 absolute lg:hidden">
                         <div class="teacher-name  bg-white-500 ">投機之王 - 5萬8翻身上億資產</div>
@@ -36,14 +47,6 @@
                     <img src="../assets/wawa.png" alt="">
                     <img src="../assets/icon.png" class="pl-8 lg:pl-12" alt="">
                 </div>
-                <!-- <div class="row box1-1 lg:hidden">
-                    <div class="teacher-content1 absolute lg:hidden">
-                        <div class="teacher-name  bg-white-500 ">投機之王 - 5萬8翻身上億資產</div>
-                        <div class="line"></div>
-                    </div>
-                    <img src="../assets/wawa.png" alt="">
-                    <img src="../assets/icon.png" class="pl-8 lg:pl-12" alt="">
-                </div> -->
                 <div class="pt-20 box2 hidden lg:block">
                     <img src="../assets/kai.png" alt="">
                     <div class="teacher-content2 absolute lg:hidden">
@@ -51,13 +54,6 @@
                         <div class="line2"></div>
                     </div>
                 </div>
-                <!-- <div class="pt-20 box2-2 lg:hidden">
-                    <img src="../assets/kai.png" alt="">
-                    <div class="teacher-content2 absolute lg:hidden">
-                        <div class="teacher-name  bg-white-500 ">外資歌神 - 曾任外資機構操盤管理職</div>
-                        <div class="line2"></div>
-                    </div>
-                </div> -->
                 <div class="box3 hidden lg:block">
                     <div class="teacher-content3 absolute lg:hidden">
                         <div class="teacher-name  bg-white-500 ">金控自營部操盤人 - 十年績效不曾為負</div>
@@ -66,14 +62,6 @@
                         <img src="../assets/hor.png" alt="">
                         <img src="../assets/icon2.png" class="pl-8 lg:pl-12" alt="">
                 </div>
-                <!-- <div class="box3-3 lg:hidden">
-                    <div class="teacher-content3 absolute lg:hidden">
-                        <div class="teacher-name  bg-white-500 ">金控自營部操盤人 - 十年績效不曾為負</div>
-                        <div class="line3"></div>
-                    </div>
-                        <img src="../assets/hor.png" alt="">
-                        <img src="../assets/icon2.png" class="pl-8 lg:pl-12" alt="">
-                </div> -->
                 <div class="pt-20 box4 hidden lg:block">
                     <img src="../assets/lia.png" alt="">
                     <div class="teacher-content4 absolute lg:hidden">
@@ -81,25 +69,14 @@
                         <div class="line4"></div>
                     </div>
                 </div>
-                <!-- <div class="pt-20 box4-4 lg:hidden">
-                    <img src="../assets/lia.png" alt="">
-                    <div class="teacher-content4 absolute lg:hidden">
-                        <div class="teacher-name  bg-white-500 ">金融怪才 - 自學成材殺入全球交易競賽前四強</div>
-                        <div class="line4"></div>
-                    </div>
-                </div> -->
 
 
                 <div class="box4-4 lg:hidden">
-                    <img src="../assets/teacher-mb.png" alt="">
-                    <!-- <div class="teacher-content4 absolute lg:hidden">
-                        <div class="teacher-name  bg-white-500 ">金融怪才 - 自學成材殺入全球交易競賽前四強</div>
-                        <div class="line4"></div>
-                    </div> -->
+                    <img src="../assets/teacher-mb2.png" alt="">
                 </div>
             </div>
           </div>
-          <div class="main p-4  flex flex-col items-center text-center lg:h-60 mt-60 md:mt-16  lg:mt-44 bg-third text-white">
+          <div class="main p-8  flex flex-col items-center text-center lg:h-60 mt-60   lg:mt-44 bg-third text-white">
               <p class="lg:text-4xl pt-8 mb-8">為什麼頂尖交易人，此刻都對股市崩跌開始有所警惕！？</p>
               <p class="lg:text-4xl"> 線圖、基本面、資金流向哪一點讓股市出現衰敗徵兆！？</p>
            </div>
@@ -174,7 +151,7 @@ export default {
     .header-box3{
       position: absolute;
       bottom: 50%;
-      left: 10%;
+      // left: 12%;
       .header-box3_inside{
         padding: 5px;
         background: rgba(255, 255, 255, 0.8);
@@ -195,27 +172,29 @@ export default {
         // height: 100vh;
         .header-img{
           left: 10%;
+          top: 2%;
         }
         .icon{
           top: 20%;
           left: 10%;
         }
         .icon2{
-          bottom: 70%;
+          bottom: 66%;
           left: 10%;
         }
         .icon3{
           padding: 10px;
-          bottom: 23%;
+          bottom: 20%;
           left: 0;
         }
         .header-box1{
-          font-size: 12px;
-          top: 10%;
+          font-size: 24px;
+          top: 6%;
         }
         .header-box3{
-          font-size: 12px;
-          top: 20%;
+          font-size: 18px;
+          top: 24%;
+          left: 10%;
         }
         .header-box4{
           padding: 30px;
@@ -282,6 +261,9 @@ export default {
               bottom: 100%;
               transform: rotate(-20deg);
             }
+          }
+          .box4-4{
+            padding-top: 50px;
           }
         }
       }
@@ -385,35 +367,36 @@ export default {
     }
     @media (max-width: 765px) and (min-width: 376px){
       .header{
-        .header-box4{
-          padding-left: 0;
-        }
         background-size: cover;
         // height: 100vh;
         .header-img{
           left: 10%;
+          top: 2%;
         }
         .icon{
           top: 20%;
           left: 10%;
         }
         .icon2{
-          bottom: 70%;
-          left: 10%;
+          bottom: 67%;
+          left: 12%;
         }
         .icon3{
-          bottom: 25%;
-          left: 30%;
+          bottom: 20%;
+          right: 5%;
         }
         .header-box1{
-          font-size: 12px;
-          // top: 23%;
+          font-size: 24px;
+          padding: 5px;
+          top: 5%;
         }
         .header-box3{
-          font-size: 12px;
-          top: 20%;
+          font-size: 18px;
+          top: 23%;
+          left: 12%;
         }
         .header-box4{
+          padding-left: 0;
           padding: 30px;
           // margin-top: 27rem;。
           // margin-bottom: 10rem;
@@ -481,32 +464,49 @@ export default {
             }
           }
           .box4-4{
-            padding-top: 24rem;
+            padding-top: 28rem;
           }
         }
       }
     }
-    @media (max-width: 768px) {
-
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .header{
+        .icon3{
+          bottom: 10%;
+          left: 27%;
+        }
+        .header-box1{
+          top: 8%;
+        }
+        .header-box3{
+          font-size: 18px;
+          top: 27%;
+          left: 10%;
+        }
+        .header-box4{
+          padding-left: 3%;
+          margin-top: 40rem;
+        }
+      }
     }
     @media (min-width: 1024px) and (max-width: 1440px) {
       .header{
         .icon3{
-          bottom: 25%;
-          left: 30%;
+          bottom: 30%;
+          left: 10%;
         }
         .header-box3{
           top: 25%;
         }
         .main{
-          margin-top: 10rem;
+          margin-top: 2rem;
         }
         .teacher-content4{
           right: 5%;
           bottom: 15%;
         }
         .header-box4{
-          margin-top: 22rem;
+          margin-top: 5rem;
         }
       }
 
@@ -520,10 +520,11 @@ export default {
           font-size: 24px;
         }
         .header-box3{
-          top: 30%;
+          top: 35%;
+          left: 10%;
         }
         .header-box4{
-          padding-left: 50rem;
+          padding-left: 55rem;
         }
       }
     }

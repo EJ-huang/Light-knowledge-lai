@@ -11,7 +11,7 @@
                     <div id="triangle"></div>
                     <li class="text-left pl-4 lg:pb-24">
                         <p class="text-gold  text-2xl pb-4">活動日期</p>
-                        <p class="lg:text-4xl text-white">2021/12/09 (四)  19:30 - 21:00</p>
+                        <p class="text-base lg:text-4xl text-white">2021/12/09 (四)  19:30 - 21:00</p>
                     </li>
                 </ul>
                 <hr>
@@ -19,8 +19,8 @@
                     <div id="triangle"></div>
                     <li class="text-left pl-4">
                         <p class="text-gold text-2xl  pb-4">參與方式</p>
-                        <p class="lg:text-4xl text-white pb-4">Zoom Video Webinar線上串流直播</p>
-                        <small class="text-left text-lg text-fifth">※提醒你!本課程為「線上直播」<br>為維護你的權益<br>請勿與他人共用你的專屬連結!</small>
+                        <p class="text-base lg:text-4xl text-white pb-4">Zoom Video Webinar線上串流直播</p>
+                        <small class="text-base text-left text-fifth">※提醒你!本課程為「線上直播」<br>為維護你的權益<br>請勿與他人共用你的專屬連結!</small>
                     </li>
                 </ul>
             </div>
